@@ -4,6 +4,16 @@
   padding: 3rem 1.25rem 4rem;
 }
 
+.eyebrow {
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  color: color-mix(in srgb, var(--foreground) 55%, transparent);
+}
+
+.eyebrow a:hover {
+  text-decoration: underline;
+}
+
 .main h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -23,30 +33,13 @@
 }
 
 .list a {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  display: block;
   padding: 0.9rem 1rem;
   border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
   border-radius: 10px;
+  font-weight: 600;
 }
 
 .list a:hover {
   background: color-mix(in srgb, var(--foreground) 4%, transparent);
-}
-
-.list span {
-  font-size: 0.9rem;
-  color: color-mix(in srgb, var(--foreground) 60%, transparent);
-}
-
-.contact {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: color-mix(in srgb, var(--foreground) 60%, transparent);
-}
-
-.contact a {
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }

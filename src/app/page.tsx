@@ -1,66 +1,37 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { APPS } from "@/lib/apps";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Bilal Labs",
+  description: "Apps and legal documents from Bilal Labs",
+};
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className={styles.main}>
+      <h1>Bilal Labs</h1>
+      <p className={styles.lead}>
+        Legal documents for our apps. New products are added as subdirectories
+        here.
+      </p>
+      <ul className={styles.list}>
+        {APPS.map((app) => (
+          <li key={app.slug}>
+            <Link href={`/${app.slug}`}>
+              <strong>{app.name}</strong>
+              <span>{app.description}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <p className={styles.contact}>
+        Contact:{" "}
+        <a href="mailto:bilaldemirerlabs@gmail.com">
+          bilaldemirerlabs@gmail.com
+        </a>
+      </p>
+    </main>
   );
 }

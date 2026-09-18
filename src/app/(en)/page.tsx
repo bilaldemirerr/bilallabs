@@ -13,8 +13,8 @@ export default function Home() {
     <main className={styles.main}>
       <h1>Bilal Labs</h1>
       <p className={styles.lead}>
-        Legal documents for our apps. New products are added as subdirectories
-        here.
+        Apps and tools from Bilal Labs. KPSS soru bankası, legal documents, and
+        more.
       </p>
       <ul className={styles.list}>
         {APPS.map((app) => (

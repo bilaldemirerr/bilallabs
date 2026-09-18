@@ -1,0 +1,96 @@
+.main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.6;
+}
+
+.eyebrow a:hover {
+  text-decoration: underline;
+}
+
+.main h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: color-mix(in srgb, var(--foreground) 75%, transparent);
+}
+
+.block {
+  margin-bottom: 2.25rem;
+}
+
+.block h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.text {
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--foreground) 78%, transparent);
+}
+
+.subjects {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.5rem;
+}
+
+.subjects a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.subjects a:hover {
+  background: color-mix(in srgb, var(--foreground) 4%, transparent);
+}
+
+.subjects span {
+  font-size: 0.8rem;
+  opacity: 0.55;
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inlineCta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.85rem 1.35rem;
+  background: var(--foreground);
+  color: var(--background);
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.inlineCta:hover {
+  opacity: 0.9;
+}
+
+.features li {
+  padding: 0.75rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

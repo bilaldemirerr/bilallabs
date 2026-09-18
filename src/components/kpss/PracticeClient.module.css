@@ -1,0 +1,149 @@
+.wrap {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+  min-height: 100dvh;
+}
+
+.loading,
+.empty {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.back {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.back:hover {
+  opacity: 1;
+}
+
+.meta {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 1.25rem;
+  opacity: 0.65;
+}
+
+.card {
+  border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.question {
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  white-space: pre-wrap;
+}
+
+.options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0.85rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.option:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--foreground) 4%, transparent);
+}
+
+.optionLabel {
+  font-weight: 600;
+  min-width: 1.25rem;
+}
+
+.correct {
+  border-color: #16a34a;
+  background: color-mix(in srgb, #16a34a 12%, transparent);
+}
+
+.incorrect {
+  border-color: #dc2626;
+  background: color-mix(in srgb, #dc2626 10%, transparent);
+}
+
+.feedback {
+  margin-top: 1.25rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.known {
+  background: color-mix(in srgb, #16a34a 14%, transparent);
+}
+
+.slow {
+  background: color-mix(in srgb, #ca8a04 16%, transparent);
+}
+
+.wrong {
+  background: color-mix(in srgb, #dc2626 14%, transparent);
+}
+
+.explanation {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.primaryBtn {
+  width: 100%;
+  padding: 0.95rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--foreground);
+  color: var(--background);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hint {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.5;
+}

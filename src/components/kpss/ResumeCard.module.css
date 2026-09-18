@@ -1,0 +1,48 @@
+.wrap {
+  margin-bottom: 2.5rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: var(--foreground);
+  color: var(--background);
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.cta:hover {
+  opacity: 0.9;
+}
+
+.note {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  opacity: 0.55;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.stats div {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 12%, transparent);
+  border-radius: 8px;
+}
+
+.stats dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0.55;
+}
+
+.stats dd {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 0.15rem;
+}

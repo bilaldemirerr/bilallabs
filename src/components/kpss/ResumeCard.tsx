@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { practicePath } from "@/lib/kpss/paths";
+import { ResetProgressButton } from "@/components/kpss/ResetProgressButton";
+import { startPath } from "@/lib/kpss/paths";
 import { useSession } from "@/lib/kpss/session";
 import styles from "./ResumeCard.module.css";
 
@@ -11,7 +12,7 @@ export function ResumeCard({ totalQuestions }: { totalQuestions: number }) {
 
   return (
     <div className={styles.wrap}>
-      <Link href={practicePath(undefined, { from: "landing" })} className={styles.cta}>
+      <Link href={startPath()} className={styles.cta}>
         {started ? "Kaldığın yerden devam et" : "Soru çözmeye başla"}
       </Link>
 
@@ -39,6 +40,8 @@ export function ResumeCard({ totalQuestions }: { totalQuestions: number }) {
           {totalQuestions} soru · Kayıt gerekmez · İlerlemen kaydedilir
         </p>
       )}
+
+      <ResetProgressButton />
     </div>
   );
 }

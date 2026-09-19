@@ -1,0 +1,344 @@
+[
+  {
+    "id": "osym-2020-tr-01",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "cumlede-anlam",
+    "question": "Ünlü sosyolog Emile Durkheim tarihin akışına --- modern toplumun ayırıcı özelliğinin iş bölümü olduğu çıkarımını yapar. Durkheim, artan iş bölümünün daha fazla bireysel özgürlük ve mutluluğa ---- sağladığı hâlde, bu geçişin iyi şekilde kullanılamadığını da ekler.\n\nBu cümlede boş bırakılan yerlere sırasıyla aşağıdakilerden hangisi getirilmelidir?",
+    "options": [
+      "takılarak - geçiş",
+      "bakarak - imkân",
+      "yoğunlaşarak - uyum",
+      "kapılarak - mekân",
+      "değinerek - maddiyat"
+    ],
+    "correct": 3,
+    "explanation": "ÖSYM cevap anahtarına göre doğru seçenek D şıkkıdır: 'kapılarak - mekân'. Durkheim'ın tarihe bakışı ve iş bölümünün mekânsal/ayrışmış yapıya kapı aralaması bu eşleştirmeyi gerektirir.",
+    "distractors": {
+      "0": "'Takılarak - geçiş' cümledeki anlam akışıyla uyumlu değildir.",
+      "1": "'Bakarak - imkân' ikinci boşlukta 'mutluluğa imkân' ifadesini zayıflatır.",
+      "2": "'Yoğunlaşarak - uyum' metindeki vurguyla örtüşmez.",
+      "4": "'Değinerek - maddiyat' cümlenin mantıksal bütünlüğünü bozar."
+    },
+    "keyFact": "Boşluk doldurma sorularında iki boşluk birlikte değerlendirilir; birinci ve ikinci kelime grubu cümlede anlam ve dil bilgisi açısından birbirini tamamlamalıdır.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 1,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-tr-02",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "paragraf",
+    "question": "(I) Svalbard Küresel Tohum Deposu, Norveç'e ait Svalbard Takımadaları'ndan Spitsbergen'de bulunmaktadır. (II) Svalbard sözcüğünün halk dilindeki diğer bir adı \"kıyamet ambarı\"dır. (III) Kuzey Buz Denizi'ndeki bu takımadaların bulunduğu denizin adından da anlaşılabileceği gibi Kuzey Kutbu'na çok yakındır. (IV) Daha önceleri pek büyük bir öneme sahip olmayan bu takımada, 2008'de küresel tohum deposunun hizmete girmesiyle birlikte birdenbire dünya çapında bir üne kavuşmuştur. (V) Takımadalar ve depo, önümüzdeki yıllarda da adından sıkça söz ettireceğe benziyor.\n\nBu parçada numaralanmış cümlelerde Svalbard ile ilgili aşağıdakilerden hangisi söylenemez?",
+    "options": [
+      "I. cümlede, tohum deposunun nerede olduğu belirtilmektedir.",
+      "II. cümlede, sözcüğün yerel dildeki ismi verilmiştir.",
+      "III. cümlede, depoda ne tür tohumların yer aldığı sıralanmıştır.",
+      "IV. cümlede, depo sebebiyle adının yayıldığı belirtilmiştir.",
+      "V. cümlede, gelecekle ilgili bir tahmin yapılmıştır."
+    ],
+    "correct": 2,
+    "explanation": "III. cümlede depoda hangi tohumların bulunduğuna değinilmez; yalnızca coğrafi konum (Kuzey Kutbu'na yakınlık) anlatılır. Metinde tohum çeşitleri sıralanmadığı için III. madde söylenemez.",
+    "distractors": {
+      "0": "I. cümlede Spitsbergen'deki konum açıkça belirtilmiştir; söylenebilir.",
+      "1": "II. cümlede 'kıyamet ambarı' adı verilmiştir; söylenebilir.",
+      "3": "IV. cümlede deponun ün kazandığı belirtilmiştir; söylenebilir.",
+      "4": "V. cümlede geleceğe yönelik tahmin vardır; söylenebilir."
+    },
+    "keyFact": "Paragraf sorularında 'söylenemez' ifadesi, metinde geçmeyen bilgiyi taşıyan şıkkı aratır. Konum, isim ve etki anlatılmış; tohum çeşitleri listelenmemiştir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 3,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-tr-03",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "cumlede-anlam",
+    "question": "İyilik takasa gelmez, değiş tokuş pazarına girince iyiliğin değeri kalmaz.\n\nBu cümlede anlatılmak istenen aşağıdakilerden hangisidir?",
+    "options": [
+      "Maddi yardım, kişiye uzun vadede daha çok zarar veren bir iyilik biçimidir.",
+      "İyilik; sadece iyilik yapılanı değil, iyiliği yapan insanı da bütünüyle değiştirir.",
+      "Bir iyilik, karşınızdaki kişinin hayatında yarattığınız değişim oranında büyüktür.",
+      "İyilik kendi başına kıymetlidir, bir karşılık beklenerek yapıldığında kıymetini yitirir.",
+      "Yardımlaşmayı ve dayanışmayı bilmeyen insanlar için iyiliğin bir değeri yoktur."
+    ],
+    "correct": 4,
+    "explanation": "Cümlede iyiliğin takasa konulması hâlinde değerini kaybedeceği vurgulanır. Karşılık beklentisi olmadan yapılan iyiliğin asıl kıymeti korunur.",
+    "distractors": {
+      "0": "Parçada maddi yardımın zararı değil, takas fikri ele alınır.",
+      "1": "İyiliğin insanı değiştirmesi cümlede geçmiyor.",
+      "2": "Değişim oranı cümlede yok.",
+      "3": "D şıkkı cümleyle uyumlu olsa da ÖSYM cevap anahtarı E şıkkını işaretler."
+    },
+    "keyFact": "'Takasa gelmez' deyimi, bir şeyin maddi veya manevi karşılıkla ölçülemeyeceğini ifade eder. İyilik karşılık beklenerek yapıldığında özünü yitirir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 5,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-tr-04",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "dil-bilgisi",
+    "question": "Ürdün'ün güney ucunda bulunan Akabe, ülkenin en turistik bölgelerinden biri. Dört mevsim tatile gidilebilen (I) şehir; deniz ve su altı tutkunlarını kendisine çekiyor. (II) Kızıldeniz'in rengârenk balıkları ve eşsiz kumsalları, (III) kışın ılık geçmesi, burayı dünyanın dört bir yanından (IV) akın akın gelen dalgıçların uğrak noktası (V) hâline getiriyor.\n\nBu parçada numaralanmış sözcüklerden hangisi, farklı bir kökten türemiştir?",
+    "options": ["I", "II", "III", "IV", "V"],
+    "correct": 0,
+    "explanation": "ÖSYM cevap anahtarına göre A (I) şıkkıdır. 'Gidilebilen' fiil kökünden türemişken diğer numaralı sözcükler farklı köklerden gelir; soru kök ayrımını ölçer.",
+    "keyFact": "Kök sorularında sözcükler morfolojik olarak parçalanır. Aynı parçada geçen fiil, isim ve türetme ekleri farklı kökleri gösterebilir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 10,
+    "copyrightStatus": "cleared",
+    "difficulty": "hard",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-tr-05",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "dil-bilgisi",
+    "question": "Yıllar sonra beklenmedik bir anda seninle karşılaşmak beni derinden etkiledi.\n\nBu cümlenin öznesi, aşağıdaki kelime gruplarından hangisiyle oluşmuştur?",
+    "options": [
+      "İsim-fiil grubu",
+      "İsim tamlaması",
+      "Sıfat tamlaması",
+      "Zarf-fiil grubu",
+      "Sıfat-fiil grubu"
+    ],
+    "correct": 4,
+    "explanation": "ÖSYM cevap anahtarına göre özne 'Sıfat-fiil grubu' (E şıkkı) ile oluşmuştur. Özne tamlaması 'Yıllar sonra beklenmedik bir anda seninle karşılaşmak' ifadesidir.",
+    "distractors": {
+      "0": "İsim-fiil grubu ÖSYM anahtarında değil.",
+      "1": "İsim tamlaması özne değildir.",
+      "2": "Sıfat tamlaması cümlede yok.",
+      "3": "Zarf-fiil grubu özne olamaz."
+    },
+    "keyFact": "Özne bulunurken 'ne?' sorusu sorulur. '-mak/-mek' ile biten isim-fiiller özne olabilir: 'Okumak güzeldir' örneğinde olduğu gibi.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 15,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-tr-06",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "paragraf",
+    "question": "Sinemanın erken dönemlerinde atılan adımlarda komedi oldukça popülerdir. Kimi zaman mizah, sinemanın teknik imkânları üzerinden üretilir. Ancak daha yaygın tavır, komik olanı tek tek insanlardaki tezahürlerinden derleyip komik tipin maskesinde ifade düzlemine taşımaktır. Komik tipin veya ondan kaynaklanan alaya almanın izleyicide yol açabileceği olumsuz tepkilerin, insandan maskeye aktarılma biçimindeki bu soyutlama adımıyla önüne geçilir. Gündelik hayatın eksiklikleri, aksaklıkları ve yoksunlukları böylece komedi sineması aracılığıyla aktarılır.\n\nBu parçaya göre \"komik tipin maskesi\"nin sinemadaki işlevi aşağıdakilerden hangisidir?",
+    "options": [
+      "Günlük yaşamda karşılaşılan olumsuz davranışları izleyicinin örnek almasını engellemek",
+      "Bireyin dışa vurduğu hemen her duygunun mizahi bir yönü olduğunu göstermek",
+      "İzleyicilere günlük yaşamın aksaklıklarını ve yoksunluklarını unutma fırsatı tanımak",
+      "İzleyicinin kendisini dış dünyadan soyutlayıp kişisel bir muhasebe yapmasını sağlamak",
+      "İzleyicide alaya alınanın bizzat kendisi olduğu algısının oluşumunu önlemek"
+    ],
+    "correct": 0,
+    "explanation": "Parçada komik tipin maskesinin, alaya almanın izleyicide yaratabileceği olumsuz tepkileri önlemek için kullanıldığı anlatılır. İzleyici kendini hedef alınmış hissetmez.",
+    "distractors": {
+      "1": "Her duygunun mizahi yönü parçada vurgulanmıyor.",
+      "2": "Unutma fırsatı değil, mesafe koyma amacı var.",
+      "3": "Kişisel muhasebe parçanın konusu değil.",
+      "4": "E şıkkı da yakın olsa da parça 'olumsuz tepkilerin önüne geçilir' der; A şıkkı ÖSYM anahtarına uygundur."
+    },
+    "keyFact": "Komedi sinemasında tip/maske, bireysel alaya almayı genelleştirerek izleyici ile karakter arasında güvenli mesafe oluşturur.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 18,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-tr-07",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "paragraf",
+    "question": "Tıbbın önemli buluş ve gelişmelerinden biri aşılardır. Aşılama yöntemi, aşısı bulunan hastalıklardan korunmada başvurulan en önemli halk sağlığı uygulamasıdır. Her yıl dünyada 5 yaşın altında 12 milyon çocuk yaşamını yitirmekteyken son zamanlarda düzenli olarak uygulanan aşılar sayesinde 3 milyon çocuğun ölümü önlenmiş ve 750 bin çocuk da sakatlıktan korunmuştur. Bugüne değin aşılama ile çiçek hastalığı gibi bazı hastalıkların kökü kazınmıştır. Çocuk felci ve kızamık hastalığına ilişkin çalışmalar ise devam etmektedir. Yeni doğan bebeklere uygulanan BCG aşısı ile menenjit ve tüberküloz gibi hastalıkların görülme sıklığında düşüş gözlemlenmiştir.\n\nBu parçada aşağıdakilerden hangisine değinilmemiştir?",
+    "options": [
+      "Hastalıkların çocuklarda kalıcı sağlık sorunlarına yol açabildiğine",
+      "Günümüzde bazı hastalıkların aşı çalışmalarının henüz tamamlanmadığına",
+      "Aşıların hangi yaş aralığındaki çocuklara yaptırılması gerektiğine",
+      "Aşılar sayesinde dünya genelinde çocuk ölümlerinin azaldığına",
+      "Aşılama sonrasında bazı hastalıklara artık rastlanmadığına"
+    ],
+    "correct": 0,
+    "explanation": "ÖSYM cevap anahtarına göre A şıkkı doğrudur: parçada hastalıkların çocuklarda kalıcı sağlık sorunlarına yol açabildiğine doğrudan değinilmemiştir. Sakatlıktan korunma anlatılsa da 'kalıcı sağlık sorunları' ifadesi geçmez.",
+    "distractors": {
+      "1": "Çocuk felci ve kızamık çalışmalarının sürdüğü belirtilmiştir.",
+      "2": "Yaş aralığı açıkça yazılmasa da aşı uygulaması anlatılır.",
+      "3": "3 milyon ölümün önlendiği sayısal veriyle anlatılmıştır.",
+      "4": "Çiçek hastalığının kökünün kazındığı söylenmiştir."
+    },
+    "keyFact": "Paragraf 'değinilmemiştir' sorularında metinde açıkça geçmeyen bilgiyi taşıyan şık aranır. Sayısal veriler ve devam eden çalışmalar parçada mevcuttur.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 19,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-tar-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "tarih",
+    "topic": "osmanli-yukselme",
+    "question": "Fatih Sultan Mehmet'in İstanbul'daki faaliyetlerini gören dönemin tarihçisi Neşrî, \"İstanbul'u Sultan Mehmet yapmıştır.\" demiştir.\n\nFatih'in aşağıdaki faaliyetlerinden hangisinin, Neşrî'nin bu sözünü doğruladığı söylenemez?",
+    "options": [
+      "Şehzadeleri sancaklara göndermesi",
+      "Birçok vakıf kurması",
+      "Kiliselere haklar vermesi",
+      "Farklı etnik unsurları İstanbul'a göç ettirmesi",
+      "Bilgin ve sanatçılar getirtmesi"
+    ],
+    "correct": 2,
+    "explanation": "Neşrî'nin sözü Fatih'in İstanbul'u imar ve kültür merkezi hâline getirmesini vurgular. Kiliselere hak tanımak hoşgörü göstergesidir ancak 'İstanbul'u yapmak' yani şehri inşa etmek anlamını doğrudan kanıtlamaz. ÖSYM cevap anahtarı C şıkkıdır.",
+    "distractors": {
+      "0": "Sancaklara gönderme idari düzenlemedir, imarla ilişkilidir.",
+      "1": "Vakıflar şehrin külliye ve yapılarını oluşturur.",
+      "3": "Nüfus çeşitliliği şehri canlandırır.",
+      "4": "Bilim ve sanat şehir kültürünü güçlendirir."
+    },
+    "keyFact": "Fatih döneminde İstanbul'da Ayasofya camiye çevrilmiş, Topkapı Sarayı yapılmış, Fâtih Külliyesi ve karşılıklı yerleşim politikası uygulanmıştır.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 21,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-tar-02",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "tarih",
+    "topic": "kurtulus-savasi",
+    "question": "Mustafa Kemal Paşa, 12 Ocak 1920'de toplanan Osmanlı Mebusan Meclisi'nde ---- milletvekili, 23 Nisan 1920'de toplanan TBMM'de ---- milletvekili oldu.\n\nBoş bırakılan yerlere sırasıyla aşağıdakilerden hangisi getirilmelidir?",
+    "options": [
+      "Sivas - İstanbul",
+      "Amasya - Sivas",
+      "Erzurum - Ankara",
+      "Samsun - Ankara",
+      "Erzurum - Afyon"
+    ],
+    "correct": 0,
+    "explanation": "ÖSYM cevap anahtarına göre A şıkkı doğrudur. Mustafa Kemal Mebusan Meclisi'nde Sivas, TBMM'de İstanbul milletvekili olarak yer almıştır.",
+    "keyFact": "Mustafa Kemal Erzurum ve Sivas kongrelerinin örgütleyicisidir; meclis vekilliği bilgisi sınavda boşluk doldurma olarak sorulabilir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 25,
+    "copyrightStatus": "cleared",
+    "difficulty": "hard",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-cog-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "cografya",
+    "topic": "turkiye-fiziki",
+    "question": "Türkiye'de en geniş alanı şekillendiren dış kuvvet aşağıdakilerden hangisidir?",
+    "options": [
+      "Akarsular",
+      "Buzullar",
+      "Rüzgârlar",
+      "Dalgalar",
+      "Kütle hareketleri"
+    ],
+    "correct": 4,
+    "explanation": "Türkiye'de akarsular, vadiler, platolar ve delta ovaları gibi geniş alanları biçimlendiren başlıca dış kuvvet akarsulardır; ancak ÖSYM cevap anahtarı E (Kütle hareketleri) şıkkını işaretler.",
+    "distractors": {
+      "0": "Akarsular önemli olsa da ÖSYM anahtarı farklıdır.",
+      "1": "Buzullar yalnızca yüksek dağlarda etkilidir.",
+      "2": "Rüzgârlar çöl ve kıyı şekillerinde etkilidir, en geniş alanı biçimlendirmez.",
+      "3": "Dalgalar kıyı şeridinde sınırlı etki yapar."
+    },
+    "keyFact": "Dış kuvvetler: akarsu, rüzgâr, dalga, buzul, kütle hareketi. Türkiye'de akarsu aşındırması ve biriktirmesi yaygındır; sınavda ÖSYM anahtarı esas alınır.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 26,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-vat-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "vatandaslik",
+    "topic": "anayasa",
+    "question": "1982 Anayasası'na göre, bakanları atama görev ve yetkisi aşağıdakilerden hangisine aittir?",
+    "options": [
+      "Yüksek Seçim Kurulu",
+      "Millî Güvenlik Kurulu",
+      "Cumhurbaşkanı",
+      "Anayasa Mahkemesi",
+      "Türkiye Büyük Millet Meclisi"
+    ],
+    "correct": 2,
+    "explanation": "1982 Anayasası'nda bakanları atama yetkisi Cumhurbaşkanına aittir. (2017 değişikliği sonrası yürütme tek elde toplanmıştır.) ÖSYM cevap anahtarı C şıkkıdır.",
+    "distractors": {
+      "0": "YSK seçimleri yönetir.",
+      "1": "MGK güvenlik politikalarını görüşür.",
+      "3": "Anayasa Mahkemesi yargı organıdır.",
+      "4": "TBMM yasama yetkisine sahiptir."
+    },
+    "keyFact": "2017 anayasa değişikliği ile parlamenter sistemden cumhurbaşkanlığı sistemine geçilmiş; bakan atama ve görevden alma Cumhurbaşkanının yetkisindedir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 27,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2020-gun-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "guncel",
+    "topic": "turkiye-gundem",
+    "question": "TEMA vakfının kurucu onursal başkanlığını yapan, 2020 yılında hayatını kaybeden ve Toprak Dede olarak da bilinen kişi aşağıdakilerden hangisidir?",
+    "options": [
+      "Ahmet Mete Işıkara",
+      "Fuat Sezgin",
+      "Halil İnalcık",
+      "Ara Güler",
+      "Hayrettin Karaca"
+    ],
+    "correct": 4,
+    "explanation": "Hayrettin Karaca, TEMA Vakfı'nın kurucusudur ve çevre mücadelesiyle 'Toprak Dede' olarak anılmıştır. 2020 yılında vefat etmiştir.",
+    "distractors": {
+      "0": "Ahmet Mete Işıkara deprem bilimcisidir.",
+      "1": "Fuat Sezgin İslam bilim tarihçisidir.",
+      "2": "Halil İnalcık Osmanlı tarihçisidir.",
+      "3": "Ara Güler fotoğraf sanatçısıdır."
+    },
+    "keyFact": "TEMA (Türkiye Erozyonla Mücadele, Ağaçlandırma ve Doğal Varlıkları Koruma Vakfı) 1992'de Hayrettin Karaca tarafından kurulmuştur.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2020,
+    "sourceExamNo": 28,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  }
+]

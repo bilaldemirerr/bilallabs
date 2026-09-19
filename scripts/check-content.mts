@@ -1,6 +1,11 @@
+import fs from "node:fs";
+import path from "node:path";
 import { ALL_QUESTIONS, isPublishable } from "../src/lib/kpss/questions.ts";
 import { SUBJECT_META, TOPICS } from "../src/lib/kpss/types.ts";
 import { questionSlug } from "../src/lib/kpss/slug.ts";
+import { questionCoverageKey } from "../src/lib/kpss/coverage.ts";
+
+const PUBLIC_DIR = path.resolve(import.meta.dirname, "..", "public");
 
 /**
  * İçerik kapısı. Soru girişi büyüdükçe darboğaz kod değil "bu soru gerçekten
@@ -13,6 +18,7 @@ const warnings: string[] = [];
 const seenIds = new Set<string>();
 const seenSlugs = new Set<string>();
 const seenQuestionText = new Map<string, string>();
+const seenSourceKeys = new Set<string>();
 
 function normalize(text: string): string {
   return text.toLowerCase().replace(/\s+/g, " ").trim();
@@ -23,6 +29,17 @@ for (const q of ALL_QUESTIONS) {
 
   if (seenIds.has(q.id)) errors.push(`${where}: id tekrar ediyor`);
   seenIds.add(q.id);
+
+  if (q.sourceYear) {
+    const sourceKey = questionCoverageKey(q);
+    if (sourceKey) {
+      const yearKey = `${q.sourceYear}:${sourceKey}`;
+      if (seenSourceKeys.has(yearKey)) {
+        errors.push(`${where}: ${yearKey} kaynak numarası başka soruda var`);
+      }
+      seenSourceKeys.add(yearKey);
+    }
+  }
 
   const slug = questionSlug(q);
   if (seenSlugs.has(slug)) errors.push(`${where}: slug çakışıyor (${slug})`);
@@ -50,6 +67,17 @@ for (const q of ALL_QUESTIONS) {
   }
   if (q.options.some((option) => option.trim() === "")) {
     errors.push(`${where}: boş şık var`);
+  }
+
+  if (q.figure) {
+    if (!q.figure.src.startsWith("/")) {
+      errors.push(`${where}: figure.src / ile başlamalı (${q.figure.src})`);
+    } else if (!fs.existsSync(path.join(PUBLIC_DIR, q.figure.src))) {
+      errors.push(`${where}: figure dosyası yok (${q.figure.src})`);
+    }
+    if (q.figure.alt.trim().length < 8) {
+      errors.push(`${where}: figure alt metni çok kısa`);
+    }
   }
 
   if (q.explanation.trim().length < 40) {

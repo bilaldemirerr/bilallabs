@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ResumeCard } from "@/components/kpss/ResumeCard";
 import { QUESTIONS } from "@/lib/kpss/questions";
-import { LEVEL_BASE, practicePath, subjectPath } from "@/lib/kpss/paths";
+import { LEVEL_BASE, startPath, subjectPath } from "@/lib/kpss/paths";
 import { jsonLdHtml } from "@/lib/kpss/seo";
 import { SUBJECTS, SUBJECT_META } from "@/lib/kpss/types";
 import { SITE_URL } from "@/lib/site";
@@ -111,7 +111,7 @@ export default function OrtaogretimHubPage() {
           geçerlidir. Dört yanlış bir doğruyu götürdüğü için emin olmadığın
           sorularda eleme yapmadan işaretlemek zarar yazar.
         </p>
-        <Link href={practicePath(undefined, { from: "landing" })} className={styles.inlineCta}>
+        <Link href={startPath()} className={styles.inlineCta}>
           Soru çözmeye başla
         </Link>
       </section>

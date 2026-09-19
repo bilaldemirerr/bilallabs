@@ -5,8 +5,8 @@ import { QUESTIONS } from "@/lib/kpss/questions";
 import { questionSlug } from "@/lib/kpss/slug";
 import {
   LEVEL_BASE,
-  practicePath,
   questionPath,
+  startPath,
   subjectPath,
   topicPath,
 } from "@/lib/kpss/paths";
@@ -20,6 +20,7 @@ import {
   topicLabel,
 } from "@/lib/kpss/types";
 import styles from "@/components/kpss/content.module.css";
+import { formatQuestionSource } from "@/lib/kpss/source";
 
 export const dynamicParams = false;
 
@@ -119,24 +120,27 @@ export default async function TopicPage({
 
       {questions.length > 0 ? (
         <>
-          <Link href={practicePath(undefined, { from: "topic" })} className={styles.cta}>
-            {label} sorusu çöz
+          <Link href={startPath()} className={styles.cta}>
+            Sıradaki önerilen soruya git
           </Link>
 
           <section className={styles.section}>
             <h2>Çözümlü sorular ({questions.length})</h2>
             <ul className={styles.links}>
-              {questions.map((q) => (
-                <li key={q.id}>
-                  <Link href={questionPath(questionSlug(q))}>
-                    {summarize(q.question)}
-                    <span className={styles.linkMeta}>
-                      Doğru cevap, çözüm ve konu özeti
-                      {q.sourceYear ? ` · ${q.sourceYear}` : ""}
-                    </span>
-                  </Link>
-                </li>
-              ))}
+              {questions.map((q) => {
+                const sourceLabel = formatQuestionSource(q);
+                return (
+                  <li key={q.id}>
+                    <Link href={questionPath(questionSlug(q))}>
+                      {summarize(q.question)}
+                      <span className={styles.linkMeta}>
+                        Doğru cevap, çözüm ve konu özeti
+                        {sourceLabel ? ` · ${sourceLabel}` : ""}
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </section>
         </>

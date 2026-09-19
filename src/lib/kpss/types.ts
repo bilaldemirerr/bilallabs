@@ -22,6 +22,13 @@ export type Difficulty = "easy" | "medium" | "hard";
 
 export type OptionIndex = 0 | 1 | 2 | 3 | 4;
 
+/** Resmi kitapçıktan kırpılmış şekil, formül veya tablo görseli. */
+export type QuestionFigure = {
+  /** public/ altından kök yol, örn. /osym/2022/q31-formula.png */
+  src: string;
+  alt: string;
+};
+
 export type Question = {
   id: string;
   level: Level;
@@ -29,6 +36,8 @@ export type Question = {
   subject: Subject;
   topic: string;
   question: string;
+  /** Metin çıkarımında kaybolan formül, şekil veya tablo. */
+  figure?: QuestionFigure;
   options: [string, string, string, string, string];
   correct: OptionIndex;
   /** Zorunlu: çözümü olmayan soru ne öğretir ne de aramada karşılık bulur. */
@@ -39,6 +48,8 @@ export type Question = {
   keyFact?: string;
   source: string;
   sourceYear?: number;
+  /** Sınav kitapçığındaki soru numarası (ör. 44). */
+  sourceExamNo?: number;
   copyrightStatus: CopyrightStatus;
   difficulty?: Difficulty;
   /** Sorunun kendi hedef süresi; yoksa dersin hedefi kullanılır. */

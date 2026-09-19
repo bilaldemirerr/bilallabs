@@ -126,13 +126,15 @@ export function pickNextQuestion(
   pendingWrong: PendingWrong[] = [],
   answerCount = 0,
   now = Date.now(),
+  excludeIds: string[] = [],
 ): Question | null {
   const byId = new Map(questions.map((q) => [q.id, q]));
+  const excluded = new Set(excludeIds);
 
   const ready = pendingWrong
     .filter((item) => item.readyAtAnswer <= answerCount)
     .map((item) => byId.get(item.questionId))
-    .filter((q): q is Question => q !== undefined);
+    .filter((q): q is Question => q !== undefined && !excluded.has(q.id));
   if (ready.length > 0) return ready[0];
 
   const blocked = new Set(
@@ -142,7 +144,7 @@ export function pickNextQuestion(
   );
 
   const candidates = questions
-    .filter((q) => !blocked.has(q.id))
+    .filter((q) => !blocked.has(q.id) && !excluded.has(q.id))
     .map((q) => ({
       question: q,
       progress: progressMap[q.id] ?? createProgress(q.id),
@@ -163,7 +165,9 @@ export function pickNextQuestion(
   const earliestBlocked = [...pendingWrong]
     .sort((a, b) => a.readyAtAnswer - b.readyAtAnswer)
     .map((item) => byId.get(item.questionId))
-    .find((q): q is Question => q !== undefined);
+    .find(
+      (q): q is Question => q !== undefined && !excluded.has(q.id),
+    );
   if (candidates.length === 0 && earliestBlocked) return earliestBlocked;
 
   const fallback = [...candidates].sort(

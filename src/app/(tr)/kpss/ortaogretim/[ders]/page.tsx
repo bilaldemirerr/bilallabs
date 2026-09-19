@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { QUESTIONS } from "@/lib/kpss/questions";
 import {
   LEVEL_BASE,
-  practicePath,
+  startPath,
   subjectPath,
   topicPath,
 } from "@/lib/kpss/paths";
@@ -87,8 +87,8 @@ export default async function SubjectPage({
         geliyor. {subject.topics}
       </p>
 
-      <Link href={practicePath(undefined, { from: "subject" })} className={styles.cta}>
-        {subject.label} sorusu çöz
+      <Link href={startPath()} className={styles.cta}>
+        Sıradaki önerilen soruya git
       </Link>
 
       <section className={styles.section}>

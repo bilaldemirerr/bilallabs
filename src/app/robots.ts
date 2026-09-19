@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/kpss/calis"],
+      disallow: ["/kpss/calis", "/kpss/ortaogretim/basla"],
     },
     sitemap: `${SITE_URL}/sitemap.xml`,
   };

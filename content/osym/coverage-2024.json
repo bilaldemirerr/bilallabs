@@ -1,0 +1,19 @@
+{
+  "year": 2024,
+  "label": "ÖSYM %10 temel kitapçık",
+  "complete": true,
+  "expected": [
+    { "section": "gy", "no": 2 },
+    { "section": "gy", "no": 9 },
+    { "section": "gy", "no": 19 },
+    { "section": "gy", "no": 33 },
+    { "section": "gy", "no": 44 },
+    { "section": "gy", "no": 57 },
+    { "section": "gk", "no": 8 },
+    { "section": "gk", "no": 17 },
+    { "section": "gk", "no": 27 },
+    { "section": "gk", "no": 28 },
+    { "section": "gk", "no": 38 },
+    { "section": "gk", "no": 50 }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "year": 2010,
+  "label": "ÖSYM resmi soru kitapçığı (Wayback arşivi)",
+  "complete": true,
+  "expected": [
+    { "section": "gy", "no": 1 },
+    { "section": "gy", "no": 5 },
+    { "section": "gy", "no": 6 },
+    { "section": "gy", "no": 8 },
+    { "section": "gy", "no": 10 },
+    { "section": "gy", "no": 20 },
+    { "section": "gk", "no": 1 },
+    { "section": "gk", "no": 3 },
+    { "section": "gk", "no": 5 },
+    { "section": "gk", "no": 10 },
+    { "section": "gk", "no": 52 },
+    { "section": "gk", "no": 59 }
+  ],
+  "note": "2010 ortaöğretim KPSS resmi PDF'i dokuman.osym.gov.tr üzerinde erişime kapalı; tam kitapçık Wayback Machine arşivinden alındı. Havuzda metin olarak aktarılabilen 12 temsili soru tutuluyor."
+}

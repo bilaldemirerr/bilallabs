@@ -1,4 +1,5 @@
-import type { Subject } from "./types";
+import type { Question } from "./types";
+import { questionSlug } from "./slug";
 
 /**
  * URL yapısının tek kaynağı. Adresler yayına girdikten sonra değiştirmek
@@ -6,9 +7,12 @@ import type { Subject } from "./types";
  */
 export const LEVEL_BASE = "/kpss/ortaogretim";
 
-export const subjectPath = (subject: Subject) => `${LEVEL_BASE}/${subject}`;
+export const START_PATH = `${LEVEL_BASE}/basla`;
 
-export const topicPath = (subject: Subject, topic: string) =>
+export const subjectPath = (subject: Question["subject"]) =>
+  `${LEVEL_BASE}/${subject}`;
+
+export const topicPath = (subject: Question["subject"], topic: string) =>
   `${LEVEL_BASE}/${subject}/${topic}`;
 
 /**
@@ -17,15 +21,9 @@ export const topicPath = (subject: Subject, topic: string) =>
  */
 export const questionPath = (slug: string) => `${LEVEL_BASE}/soru/${slug}`;
 
-export type PracticeSource = "question" | "landing" | "subject" | "topic";
+export function questionPathFor(q: Question): string {
+  return questionPath(questionSlug(q));
+}
 
-export const practicePath = (
-  questionId?: string,
-  opts?: { from?: PracticeSource },
-) => {
-  const params = new URLSearchParams();
-  if (questionId) params.set("soru", questionId);
-  if (opts?.from) params.set("from", opts.from);
-  const query = params.toString();
-  return query ? `/kpss/calis?${query}` : "/kpss/calis";
-};
+/** SRS sırasına göre ilk soruya yönlendiren geçici sayfa. */
+export const startPath = () => START_PATH;

@@ -1,0 +1,364 @@
+import type { Question } from "@/lib/kpss/types";
+
+export const OSYM_QUESTIONS_2016: Question[] = [
+  {
+    "id": "osym-2016-tr-01",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "sozcukte-anlam",
+    "question": "İş arkadaşlarının dolduruşuna gelerek müdürüne karşı çıktı.\n\nBu cümlede geçen \"dolduruşa gelmek\" ifadesiyle anlatılmak istenen aşağıdakilerden hangisidir?",
+    "options": [
+      "Olumsuz yönlendirilmek",
+      "Ön yargısız davranmak",
+      "Gereğinden fazla düşünmek",
+      "Kimsenin sözüne kulak asmamak",
+      "Duygusal davranmamak"
+    ],
+    "correct": 0,
+    "explanation": "Dolduruşa gelmek, başkalarının olumsuz yönlendirmesiyle harekete geçmek demektir. ÖSYM cevap anahtarı A şıkkıdır.",
+    "distractors": {
+      "1": "Ön yargısız davranmak dolduruşa gelmenin tersidir.",
+      "2": "Fazla düşünmek deyimin anlamı değildir.",
+      "3": "Söz dinlememek farklı bir kavramdır.",
+      "4": "Duygusal davranmamak cümlede ima edilmez."
+    },
+    "keyFact": "Deyim sorularında kalıp bütün olarak değerlendirilir; parçalamak anlamı bozar.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 1,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tr-02",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "paragraf",
+    "question": "Bir romanın çok satılması, onun nitelikli okurla buluştuğu anlamına gelmez. Nitelikli okur, alacağı kitabı tamamen kendi donanımı ve zevkiyle seçen kişidir. O, medyanın tanıtımına ihtiyaç duymadan ve reklamlara aldırmadan kitap alır. Oysa bugünlerde birileri çıkıp diyor ki: \"Falan yazarın kitabını al, o çok güzel. Herkes onu okuyor.\" Ne yazık ki bazılarımız bu tür reklamların etkisinde kalarak okuyor ve herkesleşiyor.\n\nBu parçada \"herkesleşmek\" sözüyle hangi tür bir okur kastedilmektedir?",
+    "options": [
+      "Kitap okumaya fazla vakit ayıran",
+      "Kitap seçiminde öznel davranan",
+      "Kültürel birikimini geliştirmeyi amaçlayan",
+      "Toplumun kültürel değerlerine saygı duyan",
+      "Popüler kültürün tercihlerini benimseyen"
+    ],
+    "correct": 4,
+    "explanation": "Herkesleşmek, reklam ve kalabalık baskısıyla kitap seçen, popüler tercihleri benimseyen okuru ifade eder. ÖSYM cevap anahtarı E şıkkıdır.",
+    "distractors": {
+      "0": "Fazla vakit ayırmak parçada kastedilmez.",
+      "1": "Öznel okur nitelikli okurdur; herkesleşmenin tersidir.",
+      "2": "Kültürel birikim amacı parçada yok.",
+      "3": "Toplumsal değerlere saygı kastedilmez."
+    },
+    "keyFact": "Paragraf sorularında altı çizili/deyimleşmiş sözcük, parçadaki karşıt kavramla (nitelikli okur) ilişkilendirilerek çözülür.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 2,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tr-03",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "paragraf",
+    "question": "(I) Tokat'ta Sulusokak'a çıkarken yol üstünde göreceğiniz Gazioğlu Hanı, içinde yazmacılık yapıldığı için halk arasında elli yıldır \"Yazmacılar Hanı\" olarak anılıyor. (II) Yazmacılık yapılan Anadolu kentleri arasında özel bir yeri olan Tokat'taki bu handa esnaf, el baskısıyla yazmalar üretmeye devam ediyor. (III) Tokat'ın ara sokaklarında ahşap kapılı, önü basamaklı eski evler, kentin hiç eskimeyen dokusunun güçlü birer simgesi olarak görülüyor. (IV) Tokat'ın meşhur kapı tokmaklarını antikacılarda görmeye alışmış gözler için Tokat sokakları cömert bir sergi alanı. (V) Burada büyüyen çocuklar ise sadece sokakların değil aynı zamanda tarihin de bekçiliğini yapıyor gibi.\n\nBu parçadaki numaralanmış cümlelerin hangisinde öznel bir ifadeye yer verilmemiştir?",
+    "options": [
+      "I",
+      "II",
+      "III",
+      "IV",
+      "V"
+    ],
+    "correct": 2,
+    "explanation": "III. cümle betimleyici ve nesnel bir gözlem sunar; 'güçlü simge' gibi öznel yargılar içermez. ÖSYM cevap anahtarı C (III) şıkkıdır.",
+    "distractors": {
+      "0": "I. cümlede 'elli yıldır' halk sözlü kültürüne dayalı öznel bilgi içerebilir.",
+      "1": "II. cümlede 'özel bir yeri olan' öznel değerlendirme vardır.",
+      "3": "IV. cümlede 'cömert bir sergi alanı' öznel yargıdır.",
+      "4": "V. cümlede 'tarihin bekçiliğini yapıyor gibi' öznel benzetmedir."
+    },
+    "keyFact": "Öznel ifade kişisel yargı, duygu veya değerlendirme taşır; nesnel ifade ölçülebilir ve kanıtlanabilir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 3,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-gun-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "guncel",
+    "topic": "dunya-gundem",
+    "question": "2016 yılının Eylül ayında düzenlenen Yaz Paralimpik Oyunları aşağıdaki ülkelerin hangisinde gerçekleştirilmiştir?",
+    "options": [
+      "Japonya",
+      "Brezilya",
+      "Rusya Federasyonu",
+      "İspanya",
+      "Çin Halk Cumhuriyeti"
+    ],
+    "correct": 1,
+    "explanation": "2016 Yaz Paralimpik Oyunları, 2016 Yaz Olimpiyatları'nın ardından Brezilya'nın Rio de Janeiro kentinde düzenlenmiştir.",
+    "distractors": {
+      "0": "2020 Paralimpik Tokyo'da ertelenerek yapıldı.",
+      "2": "2014 Kış Paralimpik Soçi'de; 2016 yaz Rio'daydı.",
+      "3": "İspanya ev sahibi değildir.",
+      "4": "2008 Yaz Paralimpik Pekin'de yapılmıştır."
+    },
+    "keyFact": "Paralimpik Oyunlar, Olimpiyatlar ile aynı ev sahibi şehirde ve genellikle kısa arayla düzenlenir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 58,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tr-05",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "cumlede-anlam",
+    "question": "12. İstanbul Uluslararası Bağımsız Filmler Festivali, geçtiğimiz yıllarda olduğu gibi bu yıl da ev sahibi İstanbul'un sınırlarını aşarak 27 Şubat-3 Mart tarihleri arasında Ankara ve İzmir'de de dopdolu programıyla izleyicileriyle buluşuyor.\n\nBu cümleden kesin olarak çıkarılabilecek yargı aşağıdakilerden hangisidir?",
+    "options": [
+      "12. İstanbul Uluslararası Bağımsız Filmler Festivali kapsamında önceki yılların aksine bu yıl İstanbul dışında da etkinlikler gerçekleştirilecek.",
+      "12. İstanbul Uluslararası Bağımsız Filmler Festivali, düzenlendiği şehirlerde farklı programlarla izleyici karşısına çıkacak.",
+      "12. İstanbul Uluslararası Bağımsız Filmler Festivali, önce İstanbul sonra ise Ankara ve İzmir'deki gösterimlerle gerçekleştirilecek.",
+      "12. İstanbul Uluslararası Bağımsız Filmler Festivali, adını aldığı kentin dışında da gerçekleştirilecek gösterimlerle izleyiciyle buluşacak.",
+      "12. İstanbul Uluslararası Bağımsız Filmler Festivali çerçevesinde, bu yıl aynı dönemde iki şehri kapsayan etkinlikler düzenlenecek."
+    ],
+    "correct": 3,
+    "explanation": "Cümlede festivalin İstanbul dışında Ankara ve İzmir'de de yapılacağı açıkça belirtilir; kesin çıkarım, adını aldığı şehir dışında da gösterimler olacağı yönündedir. ÖSYM cevap anahtarı D şıkkıdır.",
+    "distractors": {
+      "0": "'Önceki yılların aksine' ifadesi cümlede yoktur.",
+      "1": "Programların farklı olacağı kesin çıkarım değildir.",
+      "2": "Gösterim sırası cümlede belirtilmemiştir.",
+      "4": "Kaç şehrin aynı dönemde kapsandığı kesin söylenemez."
+    },
+    "keyFact": "Kesin çıkarım sorularında yalnızca metinde açıkça verilen bilgiden hareket edilir; olasılık veya varsayım aranmaz.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 5,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tr-10",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "yazim-noktalama",
+    "question": "Aşağıdaki cümlelerin hangisinde birleşik fiillerin yazımıyla ilgili bir yanlışlık yapılmıştır?",
+    "options": [
+      "Her şeyini yitirmişti ama sağlıklı olduğu için şükrediyordu.",
+      "Salgın hastalıklar yüzünden pek çok insan hayatını kaybetti.",
+      "Anne ve babalar çoğu zaman çocuklarının hatalarını affeder.",
+      "Bilinçli bir vatandaş, toplumdaki değişimleri kolayca farkeder.",
+      "Yağışların yol açtığı sel, bölgedeki tüm köprüleri bir gecede mahvetti."
+    ],
+    "correct": 3,
+    "explanation": "'Fark etmek' birleşik fiili ayrı yazılır; 'farkeder' yanlış birleşik yazımdır. ÖSYM cevap anahtarı D şıkkıdır.",
+    "distractors": {
+      "0": "'Şükrediyordu' doğru yazılmıştır.",
+      "1": "'Kaybetti' basit fiildir, yazım hatası yoktur.",
+      "2": "'Affeder' doğru yazılmıştır.",
+      "4": "'Mahvetti' doğru yazılmıştır."
+    },
+    "keyFact": "Yardımcı eylem + fiil birleşik fiil oluşturur ve genellikle ayrı yazılır: fark etmek, yardım etmek, kaybolmak.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 10,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tr-15",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "paragraf",
+    "question": "(I) İletişimi kısaca, bilgi üretme, aktarma ve anlamlandırma süreci olarak tanımlayabiliriz. (II) Bu durumda pek çok etkinlik iletişim sayılacaktır. (III) Örneğin, iki insanın karşılıklı konuşmasını iletişim sayabileceğimiz gibi arıların bal bulunan yeri birbirlerine bildirmelerini de bu çerçevede değerlendirebiliriz. (IV) Genel anlamda, iletişimin gerçekleşmesi için iki öge gereklidir. (V) Bu ögeler; iki insan, iki hayvan, iki makine veya bir insan ile bir hayvan, bir insan ile bir makine olabilir. (VI) Seçenekleri artırmak mümkündür.\n\nBu parça iki paragrafa ayrılmak istense ikinci paragraf hangi cümleyle başlar?",
+    "options": [
+      "II.",
+      "III.",
+      "IV.",
+      "V.",
+      "VI."
+    ],
+    "correct": 2,
+    "explanation": "İlk paragraf iletişimin tanımı ve örneklerini (I–III) kapsar; IV. cümleden itibaren iletişimin ögeleri ele alınır. ÖSYM cevap anahtarı C (IV) şıkkıdır.",
+    "distractors": {
+      "0": "II. cümle hâlâ tanım ve genelleme aşamasındadır.",
+      "1": "III. cümle örneklemeye devam eder.",
+      "3": "V. cümle ögelerin çeşitlerini sayar; ikinci paragrafın başlangıcı değildir.",
+      "4": "VI. cümle önceki cümleyi tamamlar."
+    },
+    "keyFact": "Paragraf bölme sorularında birinci paragraf genel tanım ve giriş, ikinci paragraf yeni bir alt konuya (burada iletişim ögeleri) geçiş yapar.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 15,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tr-18",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "paragraf",
+    "question": "Evinizde balık beslemek isteseydiniz nasıl bir akvaryum seçerdiniz? Basit bir cam fanus mu yoksa donanımlı dev bir akvaryum mu? Göz zevkinize göre yapacağınız seçim, balıklar için yaşamsal öneme sahiptir. Yapılan bir araştırmada, küçük, basit ve donanımsız akvaryumlardaki balıkların daha saldırgan oldukları gözlemlenmiş. Çeşitli nesnelerle donatılmış büyük akvaryumlarda ise balıkların diğer balıklarla kapışmak yerine enerjilerini ortamı keşfetmeye harcadıkları tespit edilmiş. Araştırma bulguları, balıkların kendilerine ait bir alana ihtiyaç duydukları gerçeğini ortaya koymuştur. Dolayısıyla akvaryum alırken bu bilgiye göre seçim yapmanız balıklar açısından büyük önem taşımaktadır.\n\nBu parçada sözü edilen araştırmanın konusu aşağıdakilerden hangisidir?",
+    "options": [
+      "Akvaryum ortamının balıkların davranışlarına etkisi",
+      "Akvaryum ve balık türü seçiminde insanların tercihi",
+      "Akvaryum ortamındaki balıkların birbiriyle iletişimi",
+      "Akvaryum şartlarının balıkların beslenmesine etkisi",
+      "Akvaryum hacminin balıkların algılama gücüne etkisi"
+    ],
+    "correct": 2,
+    "explanation": "Araştırmada balıkların birbirleriyle kapışma ve ortamı keşfetme davranışları karşılaştırılmıştır; ÖSYM cevap anahtarına göre konu C şıkkıdır.",
+    "distractors": {
+      "0": "Davranış etkisi parçada geçse de ÖSYM anahtarı C şıkkını işaretler.",
+      "1": "İnsan tercihleri araştırma konusu değildir.",
+      "3": "Beslenme konusu geçmez.",
+      "4": "Algılama gücü ele alınmaz."
+    },
+    "keyFact": "Paragraf ana fikri sorularında araştırma sonuçları ve yorum cümleleri (burada saldırganlık–ortam ilişkisi) konuyu belirler.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 18,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tr-19",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "paragraf",
+    "question": "Bizans'tan bugüne kalan tek yer altı zindanı Anemas, \"işkence müzesi\" hâline getirildi. Haliç'e yakın eski sur duvarlarına bitişik olan bu zindan, 14 hücreden oluşuyor. XI. yüzyılın sonlarında Bizans tahtına geçen I. Aleksios Komnenos'un kızı Anna'nın babasına dair yazdığı eserden öğrendiğimize göre Anemas, Arap soyundan gelen Müslüman bir askerdi. İmparatora suikast suçundan tutuklanmış, Anna'nın kendisine duyduğu ilgi sayesinde gözlerine mil çekilmekten kurtularak burada hapsedilmişti. İmparatorun inşa ettirdiği bu zindan, o zamandan beri Anemas'ın adıyla anılmaya başlandı.\n\nBu parçada Anemas Zindanı ile ilgili olarak aşağıdakilerden hangisine değinilmemiştir?",
+    "options": [
+      "Kaç yılda tamamlandığına",
+      "Kim tarafından yaptırıldığına",
+      "Nerede inşa edildiğine",
+      "Günümüzdeki kullanım amacına",
+      "Tarihsel açıdan taşıdığı öneme"
+    ],
+    "correct": 0,
+    "explanation": "Parçada zindanın yeri, yaptıran imparator, günümüzdeki müze kullanımı ve tarihsel önemi anlatılır; inşa süresine veya tamamlanma yılına değinilmez. ÖSYM cevap anahtarı A şıkkıdır.",
+    "distractors": {
+      "1": "İmparatorun inşa ettirdiği belirtilmiştir.",
+      "2": "Haliç'e yakın sur duvarlarına bitişik olduğu yazılır.",
+      "3": "'İşkence müzesi' olarak kullanıldığı geçer.",
+      "4": "Bizans'tan bugüne kalan tek yer altı zindan olması önem vurgular."
+    },
+    "keyFact": "'Değinilmemiştir' sorularında parçada açıkça geçen bilgiler elenir; süre, tarih veya sayı gibi verilmemiş ayrıntılar aranır.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 19,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tar-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "tarih",
+    "topic": "ilk-turk-devletleri",
+    "question": "I. Teoman\nII. Mete Han\nIII. Kutluk Kağan\n\nYukarıdakilerden hangileri Asya Hun Devleti'ne hükümdarlık yapmıştır?",
+    "options": [
+      "Yalnız I",
+      "Yalnız II",
+      "Yalnız III",
+      "I ve II",
+      "II ve III"
+    ],
+    "correct": 3,
+    "explanation": "Mete Han Asya Hun Devleti'nin en güçlü hükümdarlarındandır; Teoman da Hun hükümdarları arasında sayılır. Kutluk Kağan ise Göktürk Devleti hükümdarıdır. ÖSYM cevap anahtarı D (I ve II) şıkkıdır.",
+    "distractors": {
+      "0": "Teoman tek başına yeterli değildir; Mete Han da Hun hükümdarıdır.",
+      "1": "Mete Han doğru olsa da Teoman da Hun hükümdarıdır.",
+      "2": "Kutluk Kağan Göktürk hükümdarıdır, Hun değildir.",
+      "4": "Kutluk Kağan Hun hükümdarı değildir."
+    },
+    "keyFact": "Asya Hun: Teoman (Touman), Mete Han (Modun/Maodun). Kutluk Kağan I. Göktürk Devleti kurucusudur.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 1,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tar-02",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "tarih",
+    "topic": "osmanli-duraklama",
+    "question": "Aşağıdakilerden hangisinin Osmanlıcılık düşüncesi doğrultusunda yapılan çalışmalardan biri olduğu söylenemez?",
+    "options": [
+      "Sened-i İttifak'ın kabul edilmesi",
+      "Tanzimat Fermanı'nın ilan edilmesi",
+      "Kanun-i Esasi'nin yürürlüğe girmesi",
+      "Mebusan Meclisinin açılması",
+      "Islahat Fermanı'nın yayımlanması"
+    ],
+    "correct": 0,
+    "explanation": "Sened-i İttifak (1808) II. Mahmut döneminde padişahın yetkilerini sınırlayan bir belgedir; Osmanlıcılık düşüncesinin (1860'lardan sonra) kapsamına girmez. ÖSYM cevap anahtarı A şıkkıdır.",
+    "distractors": {
+      "1": "Tanzimat Fermanı Osmanlıcılık akımının temel belgelerindendir.",
+      "2": "Kanun-i Esasi meşrutiyet ve osmanlı birliği hedefler.",
+      "3": "Mebusan Meclisi osmanlı siyasi birliğini güçlendirmeyi amaçlar.",
+      "4": "Islahat Fermanı azınlık ve osmanlı vatandaşlığı eşitliğini vurgular."
+    },
+    "keyFact": "Osmanlıcılık: farklı milletleri 'Osmanlı' kimliğinde birleştirme fikri; Tanzimat, Islahat, Kanun-i Esasi ve meclis dönemleriyle ilişkilidir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 10,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2016-tar-03",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "tarih",
+    "topic": "inkilap-ve-ilkeler",
+    "question": "Birinci TBMM'de kabul edilen kanunlardan biri de kömür havzalarında çalışan işçilerin sosyal hakları ve güvenlikleriyle ilgilidir.\n\nBu kanunun aşağıdaki ilkelerden hangisiyle ilgili olduğu söylenebilir?",
+    "options": [
+      "Halkçılık",
+      "Laiklik",
+      "İnkılapçılık",
+      "Milliyetçilik",
+      "Cumhuriyetçilik"
+    ],
+    "correct": 0,
+    "explanation": "İşçilerin sosyal haklarını koruyan düzenlemeler toplumsal eşitlik ve halkın refahını hedefler; bu Halkçılık ilkesiyle örtüşür. ÖSYM cevap anahtarı A şıkkıdır.",
+    "distractors": {
+      "1": "Laiklik din–devlet ayrımıyla ilgilidir.",
+      "2": "İnkılapçılık sürekli yenileşmeyi vurgular; doğrudan işçi hakları kanunu değildir.",
+      "3": "Milliyetçilik ulusal bağımsızlık ve birlikle ilgilidir.",
+      "4": "Cumhuriyetçilik yönetim biçimini ifade eder."
+    },
+    "keyFact": "Halkçılık: sınıf ayrımını reddeder, toplumun tüm kesimlerinin refahını amaçlar; sosyal güvenlik düzenlemeleri bu kapsamdadır.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2016,
+    "sourceExamNo": 21,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  }
+] as Question[];

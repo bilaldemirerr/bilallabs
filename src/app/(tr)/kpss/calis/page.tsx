@@ -1,12 +1,6 @@
-import type { Metadata } from "next";
-import { PracticeClient } from "@/components/kpss/PracticeClient";
+import { redirect } from "next/navigation";
+import { START_PATH } from "@/lib/kpss/paths";
 
-export const metadata: Metadata = {
-  title: "Soru Çöz",
-  description: "KPSS Ortaöğretim soru çözüm oturumu",
-  robots: { index: false },
-};
-
-export default function KpssPracticePage() {
-  return <PracticeClient />;
+export default function LegacyCalisRedirect() {
+  redirect(START_PATH);
 }

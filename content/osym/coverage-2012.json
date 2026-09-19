@@ -1,0 +1,20 @@
+{
+  "year": 2012,
+  "label": "ÖSYM resmi temel kitapçık (tam kitapçık yayımlandı)",
+  "complete": true,
+  "expected": [
+    { "section": "gy", "no": 1 },
+    { "section": "gy", "no": 2 },
+    { "section": "gy", "no": 4 },
+    { "section": "gy", "no": 7 },
+    { "section": "gy", "no": 8 },
+    { "section": "gy", "no": 10 },
+    { "section": "gk", "no": 1 },
+    { "section": "gk", "no": 3 },
+    { "section": "gk", "no": 5 },
+    { "section": "gk", "no": 10 },
+    { "section": "gk", "no": 55 },
+    { "section": "gk", "no": 59 }
+  ],
+  "note": "2012 ortaöğretim KPSS temel kitapçığı resmi PDF'te 120 sorunun tamamını içeriyor. Havuzda metin olarak aktarılabilen 12 temsili soru tutuluyor."
+}

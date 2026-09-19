@@ -1,0 +1,19 @@
+{
+  "year": 2020,
+  "label": "ÖSYM %10 temel kitapçık",
+  "complete": true,
+  "expected": [
+    { "section": "gy", "no": 1 },
+    { "section": "gy", "no": 3 },
+    { "section": "gy", "no": 5 },
+    { "section": "gy", "no": 10 },
+    { "section": "gy", "no": 15 },
+    { "section": "gy", "no": 18 },
+    { "section": "gy", "no": 19 },
+    { "section": "gk", "no": 21 },
+    { "section": "gk", "no": 25 },
+    { "section": "gk", "no": 26 },
+    { "section": "gk", "no": 27 },
+    { "section": "gk", "no": 28 }
+  ]
+}

@@ -1,6 +1,6 @@
 import { AuthProvider } from "@/components/kpss/AuthProvider";
 
-export default function PracticeLayout({
+export default function OrtaogretimLayout({
   children,
 }: {
   children: React.ReactNode;

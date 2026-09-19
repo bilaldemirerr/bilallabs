@@ -1,0 +1,20 @@
+{
+  "year": 2016,
+  "label": "ÖSYM resmi tam kitapçık (2016'da %10 yerine tüm sorular yayımlandı)",
+  "complete": true,
+  "expected": [
+    { "section": "gy", "no": 1 },
+    { "section": "gy", "no": 2 },
+    { "section": "gy", "no": 3 },
+    { "section": "gy", "no": 5 },
+    { "section": "gy", "no": 10 },
+    { "section": "gy", "no": 15 },
+    { "section": "gy", "no": 18 },
+    { "section": "gy", "no": 19 },
+    { "section": "gk", "no": 1 },
+    { "section": "gk", "no": 10 },
+    { "section": "gk", "no": 21 },
+    { "section": "gk", "no": 58 }
+  ],
+  "note": "ÖSYM 2016 ortaöğretim KPSS'te tüm soru kitapçığını resmen yayımladı. Havuzda metin olarak aktarılabilen 12 temsili soru tutuluyor; görsel sorular (geometri, grafik) henüz eklenmedi."
+}

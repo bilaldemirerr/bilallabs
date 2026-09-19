@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PracticeCtaLink } from "@/components/analytics/PracticeCtaLink";
+import { QuestionFlow } from "@/components/kpss/QuestionFlow";
 import { QuestionViewTracker } from "@/components/analytics/QuestionViewTracker";
 import { QUESTIONS } from "@/lib/kpss/questions";
 import { ALL_SLUGS, getQuestionBySlug, questionSlug } from "@/lib/kpss/slug";
 import {
   LEVEL_BASE,
-  practicePath,
   questionPath,
   subjectPath,
   topicPath,
@@ -19,6 +18,8 @@ import {
   topicLabel,
   type OptionIndex,
 } from "@/lib/kpss/types";
+import { QuestionPrompt } from "@/components/kpss/QuestionPrompt";
+import { QuestionSource } from "@/components/kpss/QuestionSource";
 import styles from "@/components/kpss/content.module.css";
 
 export const dynamicParams = false;
@@ -163,67 +164,60 @@ export default async function QuestionPage({
         )}
       </nav>
 
-      <h1>{question.question}</h1>
+      <QuestionPrompt question={question} />
+      <QuestionSource question={question} />
       <p className={styles.lead}>
         KPSS Ortaöğretim {SECTION_LABELS[subject.section]} · {subject.label}
         {topic ? ` · ${topic}` : ""}
-        {question.sourceYear ? ` · ${question.sourceYear} çıkmış soru` : ""}
       </p>
 
-      <ul className={styles.answers}>
-        {question.options.map((text, index) => {
-          const isCorrect = index === question.correct;
-          return (
-            <li
-              key={index}
-              className={`${styles.answer} ${isCorrect ? styles.answerCorrect : ""}`}
-            >
-              <span className={styles.answerKey}>{OPTION_KEYS[index]}</span>
-              <span>{text}</span>
-              {isCorrect && <span className={styles.badge}>Doğru cevap</span>}
-            </li>
-          );
-        })}
-      </ul>
-
-      <section className={styles.section}>
-        <h2>
-          Neden {OPTION_KEYS[question.correct]}?
-        </h2>
-        <p>{question.explanation}</p>
-      </section>
-
-      {wrongOptions.length > 0 && (
-        <section className={styles.section}>
-          <h2>Diğer şıklar neden yanlış?</h2>
-          <ul className={styles.reasons}>
-            {wrongOptions.map((option) => (
-              <li key={option.index}>
-                <span className={styles.answerKey}>
-                  {OPTION_KEYS[option.index]}
-                </span>
-                <span>{option.reason}</span>
+      <QuestionFlow question={question} solutionId="question-solution">
+      <div id="question-solution" className={styles.solutionBlock}>
+        <ul className={styles.answers}>
+          {question.options.map((text, index) => {
+            const isCorrect = index === question.correct;
+            return (
+              <li
+                key={index}
+                className={`${styles.answer} ${isCorrect ? styles.answerCorrect : ""}`}
+              >
+                <span className={styles.answerKey}>{OPTION_KEYS[index]}</span>
+                <span>{text}</span>
+                {isCorrect && <span className={styles.badge}>Doğru cevap</span>}
               </li>
-            ))}
-          </ul>
-        </section>
-      )}
+            );
+          })}
+        </ul>
 
-      {question.keyFact && (
         <section className={styles.section}>
-          <h2>Bilmen gereken bilgi</h2>
-          <p>{question.keyFact}</p>
+          <h2>Neden {OPTION_KEYS[question.correct]}?</h2>
+          <p>{question.explanation}</p>
         </section>
-      )}
 
-      <PracticeCtaLink
-        href={practicePath(question.id, { from: "question" })}
-        questionId={question.id}
-        slug={slug}
-        className={styles.cta}
-      >
-        Bu soruyu uygulamada çöz
-      </PracticeCtaLink>
+        {wrongOptions.length > 0 && (
+          <section className={styles.section}>
+            <h2>Diğer şıklar neden yanlış?</h2>
+            <ul className={styles.reasons}>
+              {wrongOptions.map((option) => (
+                <li key={option.index}>
+                  <span className={styles.answerKey}>
+                    {OPTION_KEYS[option.index]}
+                  </span>
+                  <span>{option.reason}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {question.keyFact && (
+          <section className={styles.section}>
+            <h2>Bilmen gereken bilgi</h2>
+            <p>{question.keyFact}</p>
+          </section>
+        )}
+      </div>
+      </QuestionFlow>
 
       {related.length > 0 && (
         <section className={styles.section}>

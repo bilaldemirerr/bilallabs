@@ -1,0 +1,20 @@
+{
+  "year": 2018,
+  "label": "ÖSYM %10 temel kitapçık",
+  "complete": true,
+  "expected": [
+    { "section": "gy", "no": 1 },
+    { "section": "gy", "no": 3 },
+    { "section": "gy", "no": 5 },
+    { "section": "gy", "no": 10 },
+    { "section": "gy", "no": 14 },
+    { "section": "gy", "no": 19 },
+    { "section": "gy", "no": 34 },
+    { "section": "gy", "no": 57 },
+    { "section": "gk", "no": 21 },
+    { "section": "gk", "no": 24 },
+    { "section": "gk", "no": 26 },
+    { "section": "gk", "no": 28 }
+  ],
+  "note": "tr-04 (gy:10) ve tr-07 (gy:18) tam kitapçıktan; resmi 12'lik örnekte yok, havuzda ek olarak duruyor."
+}

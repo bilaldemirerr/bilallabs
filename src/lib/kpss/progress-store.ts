@@ -1,4 +1,10 @@
-import { doc, setDoc, collection, getDocs } from "firebase/firestore";
+import {
+  collection,
+  deleteDoc,
+  doc,
+  getDocs,
+  setDoc,
+} from "firebase/firestore";
 import type { QuestionProgress } from "./types";
 import { PROGRESS_SCHEMA_VERSION } from "./types";
 import { getFirebaseDb } from "@/lib/firebase/client";
@@ -71,6 +77,22 @@ export async function loadProgress(
 
   if (typeof window === "undefined") return {};
   return parseMap(localStorage.getItem(localKey(uid)));
+}
+
+export async function clearProgress(uid: string): Promise<void> {
+  if (typeof window !== "undefined") {
+    localStorage.removeItem(localKey(uid));
+  }
+
+  const db = getFirebaseDb();
+  if (!db) return;
+
+  try {
+    const snap = await getDocs(collection(db, "users", uid, "progress"));
+    await Promise.all(snap.docs.map((d) => deleteDoc(d.ref)));
+  } catch {
+    // localStorage zaten temizlendi
+  }
 }
 
 export async function saveProgress(

@@ -113,3 +113,10 @@ export function recordAnswer(questionId: string, dueCount: number): void {
   localStorage.setItem(KEY, JSON.stringify(updated));
   notify();
 }
+
+export function resetSession(): void {
+  localStorage.removeItem(KEY);
+  cachedRaw = null;
+  cachedSession = EMPTY_SESSION;
+  notify();
+}

@@ -1,0 +1,376 @@
+import type { Question } from "@/lib/kpss/types";
+
+export const OSYM_QUESTIONS_2022: Question[] = [
+  {
+    "id": "osym-2022-tr-01",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "sozcukte-anlam",
+    "question": "Modern zamanlarda bireyin yaşadığı en önemli sorunlardan biri kendi hayatının tanığı olmak. Bir yere gittiğinde mekânla bütünleşmek yerine oranın yüzlerce fotoğrafını çekip anında başkalarına sunmak, denize girmek yerine orada olduğunu sosyal medya araçlarından duyurmak bunun bir göstergesi değil mi?\n\nBu parçada altı çizili sözle anlatılmak istenen aşağıdakilerden hangisidir?\n\n(kendi hayatının tanığı olmak)",
+    "options": [
+      "Görülmeyi, yaşamaya tercih etmek",
+      "Beğenilme kaygısı içinde olmak",
+      "Güncel olanı, anında kayda geçirmek",
+      "Belli yaşantıları kalıcı kılmayı istemek",
+      "Deneyimlerini başkalarına aktarmak"
+    ],
+    "correct": 0,
+    "explanation": "Parçada deneyim yaşamak yerine anında paylaşma ve kaydetme eğilimi eleştiriliyor. 'Kendi hayatının tanığı olmak', yaşananı içselleştirmek yerine dışarıya sunmaya öncelik vermek, yani görülmeyi yaşamaya tercih etmek anlamına gelir.",
+    "distractors": {
+      "1": "Beğenilme kaygısı parçada ima edilse de altı çizili sözün doğrudan karşılığı değildir.",
+      "2": "Kayda geçirme bir örnek olarak verilmiş; asıl vurgu tanıklık etmemektir.",
+      "3": "Kalıcı kılma amacı parçada yok.",
+      "4": "Aktarma eylemi var ama asıl sorun yaşamayı ikinci plana atmaktır."
+    },
+    "keyFact": "Söz grubu anlam sorularında altı çizili ifade parçadaki örneklerle ilişkilendirilir. Burada fotoğraf çekme ve sosyal medyada duyurma, yaşamak yerine 'görünmeyi' seçmeyi gösterir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 1,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-tr-02",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "yazim-noktalama",
+    "question": "O, hem müzik kuramcısı hem de iyi bir yazardır. Onun müziği, müzikseverler tarafından belirsizliğin müziği olarak tanımlanabilir. Ancak kesin olan bir şey var ki yenilikçi bakış açısıyla müziği yepyeni bir boyuta taşıdı.\n\nBu parçada numaralanmış sözcüklerden hangisinin yazımı yanlıştır?\n(I: Onun — II: müziği — III: varki — IV: yenilikçi — V: boyuta)",
+    "options": [
+      "I",
+      "II",
+      "III",
+      "IV",
+      "V"
+    ],
+    "correct": 2,
+    "explanation": "'Var ki' bağlacı ayrı yazılır; bitişik yazılan 'varki' yanlıştır. ÖSYM cevap anahtarı C (III) şıkkıdır.",
+    "distractors": {
+      "0": "'Onun' iyelik zamiri, doğru yazılmıştır.",
+      "1": "'Müziği' doğru yazılmıştır.",
+      "3": "'Yenilikçi' doğru yazılmıştır.",
+      "4": "'Boyuta' doğru yazılmıştır."
+    },
+    "keyFact": "'De/da' ve 'ki' bağlaçları ayrı yazılır: 'var ki', 'öyle ki', 'halbuki'. Bitişik yazılan 'varki', 'de' gibi bağlaç hataları sık sorulur.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 9,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-tr-03",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "turkce",
+    "topic": "paragraf",
+    "question": "Statü, kişiye toplum tarafından verilen sosyal saygınlık anlamına gelir. Günümüzde artan nüfus ve modern yaşamla birlikte statünün kişisel çıkarımlara göre ifade edilmesi zorlaştı. Statü bugün daha çok yaşam şekillerimizle ilişkilidir: oturulan konut, marka tercihi, sosyal çevre, konuşma tarzı ve meslek gibi göstergeler bireylerin sosyal konumunu belirlemede çok daha etkilidir.\n\nBu parçaya göre statünün belirlenmesinde kullanılan yöntemin değişmesinin nedeni aşağıdakilerden hangisidir?",
+    "options": [
+      "Günümüz yaşam şartlarının eskiye göre daha düzenli bir yapıya sahip olması",
+      "Kişinin toplumsal yaşamda sahip olduğu konumun ekonomik durumuyla belirlenmesi",
+      "Günümüzde kişilerin toplumda itibar kazanmasının belirli şartlara bağlanması",
+      "Kişiye itibar kazandıran sembollerin bireysel değerlendirmelerin ötesine geçmesi",
+      "Kişinin sosyal konumunu belirleyen imkânların daha karmaşık bir boyut kazanması"
+    ],
+    "correct": 3,
+    "explanation": "Parçada statünün artık yüz yüze tanımadan çok yaşam tarzı göstergeleriyle (konut, marka, meslek vb.) belirlendiği; bu göstergelerin bireysel yorumu zorlaştırdığı anlatılıyor. Sembollerin bireysel değerlendirmelerin ötesine geçmesi bu değişimin nedenidir.",
+    "distractors": {
+      "0": "Parçada düzenli yapı vurgusu yok.",
+      "1": "Yalnızca ekonomik durum değil, çoklu göstergeler söz konusu.",
+      "2": "Belirli şartlara bağlanma parçanın odağı değil.",
+      "4": "Karmaşıklık sonuç olabilir; asıl neden sembollerin çoğalması ve yorum zorluğu."
+    },
+    "keyFact": "Paragraf sorularında 'neden' sorulduğunda cevap, metinde açıkça gerekçelendirilen husustur. Burada statü artık sembolik yaşam tarzı göstergelerine dayanıyor.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 19,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-mat-02",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "matematik",
+    "topic": "sayilar",
+    "question": "Yukarıdaki işlemin sonucu kaçtır?",
+    "figure": {
+      "src": "/osym/2022/q31-formula.png",
+      "alt": "Ondalık işlem: (1−0,04) bölü (0,5+0,14) eksi 0,3"
+    },
+    "options": [
+      "0,9",
+      "1,2",
+      "1,4",
+      "1,7",
+      "2,1"
+    ],
+    "correct": 1,
+    "explanation": "Pay: 1 − 0,04 = 0,96. Payda: 0,5 + 0,14 = 0,64. 0,96 ÷ 0,64 = 1,5. 1,5 − 0,3 = 1,2. ÖSYM cevap anahtarı B (1,2) şıkkıdır.",
+    "distractors": {
+      "0": "0,9, işlem sırasını veya ondalık bölmeyi yanlış uygulayınca çıkar.",
+      "2": "1,4, 0,3 çıkarılmadan veya payda hatalı toplanırsa elde edilir.",
+      "3": "1,7, payda 0,5 ile sınırlı kalırsa bu sonuca yaklaşılır.",
+      "4": "2,1, bölme adımı atlanırsa sonuç şişer."
+    },
+    "keyFact": "Ondalık işlemlerde önce parantez içi, sonra çarpma/bölme, en son toplama/çıkarma. Virgüllü bölmede her iki sayıyı 100 ile genişletmek işlemi kolaylaştırır.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 31,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-mat-01",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "matematik",
+    "topic": "problemler",
+    "question": "Bir marangoz, boyutları 6 birim ve 8 birim olan dikdörtgen biçimindeki oyun tahtasını birim karelere ayırarak ortak kenara sahip kareler farklı renkte olacak biçimde siyah ve beyaza boyamıştır.\n\nSonra bu tahtadaki beyaz birim karelerden bazılarını tamamen siyaha boyayan marangoz, son durumda beyaz birim kare sayısının siyah birim kare sayısına oranının 3/5 olduğunu hesaplamıştır.\n\nBuna göre, beyaz birim karelerden kaç tanesi siyaha boyanmıştır?",
+    "figure": {
+      "src": "/osym/2022/q46-board.png",
+      "alt": "6×8 birimlik satranç tahtası deseninde siyah-beyaz kareli oyun tahtası"
+    },
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct": 0,
+    "explanation": "6×8 tahtada 48 birim kare vardır. Satranç tahtası deseninde başlangıçta eşit sayıda siyah ve beyaz kare bulunur. Son durumda beyaz/siyah = 3/5 olması için beyaz karelerden 6 tanesinin siyaha boyandığı hesaplanır. ÖSYM cevap anahtarı A (6) şıkkıdır.",
+    "distractors": {
+      "1": "7 kare boyanması oranı 1/3 yapmaz.",
+      "2": "8 kare boyanması hedef oranı sağlamaz.",
+      "3": "9 kare boyanması verilen orana uymaz.",
+      "4": "10 kare boyanması son oranı 1/3'e getirmez."
+    },
+    "keyFact": "Oran problemlerinde toplam sabitse W/S = r ve W+S = T denklemleri birlikte çözülür. Satranç tahtası boyamasında komşu kareler farklı renktedir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 46,
+    "copyrightStatus": "cleared",
+    "difficulty": "hard",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-mat-03",
+    "level": "ortaogretim",
+    "section": "gy",
+    "subject": "matematik",
+    "topic": "geometri",
+    "question": "ABC eşkenar üçgen, [ED] ⊥ [AB], |FE| = |FD|, m(∠CFE) = 21° ve m(∠AFD) = x olmak üzere D, E ve F noktaları üçgenin kenarları üzerindedir.\n\nBuna göre, x kaç derecedir?",
+    "figure": {
+      "src": "/osym/2022/q57-triangle.png",
+      "alt": "ABC eşkenar üçgende D, E, F noktaları, dik açı ve 21 derece açısı gösterilmiş geometri şekli"
+    },
+    "options": [
+      "72",
+      "75",
+      "78",
+      "81",
+      "84"
+    ],
+    "correct": 3,
+    "explanation": "Eşkenar üçgende açılar 60°'dir. |FE| = |FD| olduğundan F'deki taban açıları eşittir. m(∠CFE) = 21° verildiğinden, eşkenar üçgen ve diklik koşulları birlikte uygulandığında m(∠AFD) = x = 81° bulunur. ÖSYM cevap anahtarı D şıkkıdır.",
+    "distractors": {
+      "0": "72°, F'deki eş açılar hesaba katılmadan sadece 60° tabanından türetilir.",
+      "1": "75°, 21° ile 60° arasındaki fark yanlış yorumlanırsa çıkar.",
+      "2": "78°, dik açı koşulu göz ardı edilirse bu sonuca yaklaşılır.",
+      "4": "84°, toplam açı 180° kuralı yanlış uygulanırsa elde edilir."
+    },
+    "keyFact": "Eşkenar üçgende tüm iç açılar 60°'dir. İkizkenar üçgende tabana karşılık gelen açılar eşittir; birden fazla koşul varsa adım adım açı aktarımı yapılır.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 57,
+    "copyrightStatus": "cleared",
+    "difficulty": "hard",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-tar-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "tarih",
+    "topic": "ilk-turk-devletleri",
+    "question": "Dede Korkut Hikâyeleri'nde geçen \"Aç görsem doyurdum, yalıncak görsem donattım, tepe gibi et yığdırdım.\" ifadesiyle İslamiyet öncesi Türk devletlerinin aşağıdaki özelliklerinden hangisi vurgulanmaktadır?",
+    "options": [
+      "Sosyal devlet anlayışı",
+      "Kut anlayışı",
+      "İkili yönetim yapısı",
+      "Töreye dayalı hukuk sistemi",
+      "Ordu-millet anlayışı"
+    ],
+    "correct": 0,
+    "explanation": "Alplik erdemine bağlı olarak açları doyurma, yoksulları giydirme ve cömertlik gösterme, topluma karşı sorumluluk taşıyan sosyal devlet anlayışını yansıtır.",
+    "distractors": {
+      "1": "Kut, hükümdarın ilahi güçle yönetme inancıdır.",
+      "2": "İkili yönetim hükümdar ve yabgu ile ilgilidir.",
+      "3": "Töre hukuk sistemi ifadede vurgulanmıyor.",
+      "4": "Ordu-millet savaş ve askerlikle ilgilidir."
+    },
+    "keyFact": "Dede Korkut Hikâyeleri Oğuz Türklerinin destanıdır. Alplik: cömertlik, adalet, yiğitlik. 'Aç doyurmak, yoksulu giydirmek' sosyal sorumluluk ve sosyal devlet anlayışının göstergesidir.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 61,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-tar-02",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "tarih",
+    "topic": "inkilap-ve-ilkeler",
+    "question": "Siyasal, sosyal ve kültürel alanlarda çağın gereklerine uygun olarak yapılan köklü değişikliklerle Türk toplumuna dinamizm kazandırmayı amaçlayan ilke aşağıdakilerden hangisidir?",
+    "options": [
+      "Milliyetçilik",
+      "İnkılapçılık",
+      "Halkçılık",
+      "Devletçilik",
+      "Cumhuriyetçilik"
+    ],
+    "correct": 1,
+    "explanation": "İnkılapçılık, toplumun çağdaş medeniyet seviyesine ulaşması için köklü değişiklikleri ve yenilikleri savunan Atatürk ilkesidir.",
+    "distractors": {
+      "0": "Milliyetçilik ulusal bağımsızlık ve birlik vurgular.",
+      "2": "Halkçılık eşitlik ve sınıf ayrımı reddini ifade eder.",
+      "3": "Devletçilik ekonomide devlet müdahalesini savunur.",
+      "4": "Cumhuriyetçilik egemenliğin millete ait olmasını ifade eder."
+    },
+    "keyFact": "Altı ok: Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik, İnkılapçılık. İnkılapçılık = yeni, çağdaş, dinamik toplum hedefi.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 23,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-cog-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "cografya",
+    "topic": "turkiye-fiziki",
+    "question": "Normal faylar arasında yükselen bloklar horst yapıları olarak adlandırılmaktadır. Türkiye'deki bazı dağlar büyük horst yapılarından oluşmuştur.\n\nAşağıdakilerden hangisi, bu şekilde oluşmuş dağlardan biri değildir?",
+    "options": [
+      "Boz Dağlar",
+      "Aydın Dağları",
+      "Yunt Dağı",
+      "Tahtalı Dağları",
+      "Madra Dağı"
+    ],
+    "correct": 3,
+    "explanation": "Tahtalı Dağları (Antalya) tektonik horst değil, sedimanter/karstik yapılı bir dağdır. Boz Dağlar, Aydın Dağları, Yunt Dağı ve Madra Dağı horst örnekleridir.",
+    "distractors": {
+      "0": "Boz Dağlar horst yapısıdır.",
+      "1": "Aydın Dağları horst yapısıdır.",
+      "2": "Yunt Dağı horst yapısıdır.",
+      "4": "Madra Dağı horst yapısıdır."
+    },
+    "keyFact": "Horst: faylar arasında yükselen blok. Türkiye'de Boz Dağlar, Aydın Dağları, Yunt Dağı horst örnekleridir. Graben: alçalan blok (Ege Grabeni vb.).",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 26,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-cog-02",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "cografya",
+    "topic": "turkiye-ekonomik",
+    "question": "Türkiye'de çözünebilen kayaçların bulunduğu karstik alanlarda mağaralar görülür. Bu mağaralardan farklı ve çekici doğal güzelliklere sahip olanlar turizme açılmıştır.\n\nBuna göre aşağıdaki illerin hangisinde mağara turizminin gelişmiş ve yaygın olduğu söylenebilir?",
+    "options": [
+      "Adana",
+      "Aydın",
+      "Antalya",
+      "İzmir",
+      "Muğla"
+    ],
+    "correct": 2,
+    "explanation": "Antalya'da Damlataş, Karain, Kocain gibi turizme açılmış önemli mağaralar bulunur. Karstik arazi yapısı mağara turizmini destekler.",
+    "distractors": {
+      "0": "Adana'da mağara turizmi Antalya kadar gelişmiş değildir.",
+      "1": "Aydın'da mağaralar vardır ancak turizm Antalya kadar yaygın değildir.",
+      "3": "İzmir'de sınırlı mağara turizmi vardır.",
+      "4": "Muğla'da mağaralar olsa da Antalya kadar kapsamlı değildir."
+    },
+    "keyFact": "Karstik arazi: kireçtaşı, mermer gibi çözünebilen kayaçlar. Antalya ve Mersin (Toroslar) mağara turizmi açısından öne çıkar.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 40,
+    "copyrightStatus": "cleared",
+    "difficulty": "medium",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-vat-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "vatandaslik",
+    "topic": "hukuk-baslangici",
+    "question": "Rızayla yerine getirilmeyen borçların, alacaklının talebi üzerine devlet yardımı ve zoruyla yerine getirilmesine ne ad verilir?",
+    "options": [
+      "Uzlaştırma",
+      "Asli müdahale",
+      "Cebrî icra",
+      "Tahkim",
+      "Ara buluculuk"
+    ],
+    "correct": 2,
+    "explanation": "Cebrî icra (cebri icra), borçlunun rızası olmadan devletin zoruyla borcun yerine getirilmesidir. İcra ve iflas hukukunun konusudur.",
+    "distractors": {
+      "0": "Uzlaştırma tarafların anlaşmasıdır.",
+      "1": "Asli müdahale idare hukuku terimidir.",
+      "3": "Tahkim mahkeme dışı uyuşmazlık çözümüdür.",
+      "4": "Ara buluculuk tarafları anlaştırma sürecidir."
+    },
+    "keyFact": "İcra hukuku: alacaklının borçludan hakkını devlet aracılığıyla alması. İlamsız icra ve ilamlı icra türleri vardır.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 48,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "osym-2022-gun-01",
+    "level": "ortaogretim",
+    "section": "gk",
+    "subject": "guncel",
+    "topic": "turkiye-gundem",
+    "question": "Geleneksel spor organizasyonu olan ve 2022 yılında \"Gelenekten Geleceğe Bir'iz!\" sloganıyla düzenlenen 4. Dünya Göçebe Oyunları aşağıdaki yerlerin hangisinde yapılmıştır?",
+    "options": [
+      "Bergama",
+      "Fethiye",
+      "İznik",
+      "Alanya",
+      "Sivrihisar"
+    ],
+    "correct": 2,
+    "explanation": "4. Dünya Göçebe Oyunları 29 Eylül – 6 Ekim 2022 tarihlerinde Bursa'nın İznik ilçesinde düzenlenmiştir.",
+    "distractors": {
+      "0": "Bergama 2022 Göçebe Oyunları'nın ev sahibi değildir.",
+      "1": "Fethiye organizasyon yeri değildir.",
+      "3": "Alanya ev sahibi ilçe değildir.",
+      "4": "Sivrihisar organizasyon yeri değildir."
+    },
+    "keyFact": "Dünya Göçebe Oyunları Türk cumhuriyetleri ve Türk topluluklarının geleneksel sporlarını bir araya getirir. 2022'de İznik ev sahipliği yapmıştır.",
+    "source": "osym-ortaogretim-kpss",
+    "sourceYear": 2022,
+    "sourceExamNo": 57,
+    "copyrightStatus": "cleared",
+    "difficulty": "easy",
+    "reviewStatus": "approved"
+  }
+] as Question[];

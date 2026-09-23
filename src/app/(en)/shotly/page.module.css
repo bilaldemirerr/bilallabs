@@ -43,3 +43,52 @@
 .list a:hover {
   background: color-mix(in srgb, var(--foreground) 4%, transparent);
 }
+
+.main section + section {
+  margin-top: 2rem;
+}
+
+.main h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: color-mix(in srgb, var(--foreground) 55%, transparent);
+}
+
+.list a.support {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.support span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--foreground) 70%, transparent);
+}
+
+.faq {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.faq li {
+  padding: 0.9rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+  border-radius: 10px;
+}
+
+.faq h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.faq p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--foreground) 70%, transparent);
+}

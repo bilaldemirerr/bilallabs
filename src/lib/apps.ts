@@ -16,4 +16,9 @@ export const APPS: AppLegal[] = [
     name: "Shotly",
     description: "GLP-1 shot, dose, weight, and side-effect tracker",
   },
+  {
+    slug: "lovely",
+    name: "Lovely",
+    description: "A private app for two partners: stories, moods, journal and distance",
+  },
 ];

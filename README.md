@@ -7,6 +7,7 @@ Multi-app legal documents for App Store / Play listings.
 | App | Privacy | Terms |
 | --- | --- | --- |
 | Shotly | `/shotly/privacy` | `/shotly/terms` |
+| Lovely | `/lovely/privacy` | `/lovely/terms` |
 
 ## Add a new app
 

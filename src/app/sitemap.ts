@@ -10,6 +10,7 @@ import {
   topicPath,
 } from "@/lib/kpss/paths";
 import { SUBJECTS, TOPICS } from "@/lib/kpss/types";
+import { SUBAGENTS, SUBAGENTS_BASE, subagentPath } from "@/lib/subagents";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -56,5 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })),
     ...legal,
+    { url: `${SITE_URL}${SUBAGENTS_BASE}`, lastModified, changeFrequency: "weekly", priority: 0.9 },
+    ...SUBAGENTS.map((a) => ({
+      url: `${SITE_URL}${subagentPath(a.slug)}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
   ];
 }

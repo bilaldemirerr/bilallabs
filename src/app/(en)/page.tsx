@@ -25,6 +25,12 @@ export default function Home() {
             </Link>
           </li>
         ))}
+        <li>
+          <Link href="/ai/subagents">
+            <strong>Subagent examples for Claude Code &amp; Cursor</strong>
+            <span>33 copy-paste subagent templates and a format converter</span>
+          </Link>
+        </li>
       </ul>
       <p className={styles.contact}>
         Contact:{" "}

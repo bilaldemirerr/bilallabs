@@ -1,0 +1,125 @@
+.main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+  line-height: 1.6;
+}
+
+.main h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.main h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.main p,
+.main ul {
+  margin-bottom: 1rem;
+}
+
+.main ul {
+  padding-left: 1.25rem;
+}
+
+.main a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.eyebrow,
+.muted {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--foreground) 60%, transparent);
+}
+
+.code {
+  overflow-x: auto;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  background: color-mix(in srgb, var(--foreground) 6%, transparent);
+}
+
+.grid {
+  list-style: none;
+  padding: 0 !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.75rem;
+}
+
+.grid a {
+  display: block;
+  height: 100%;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+  border-radius: 10px;
+}
+
+.grid a:hover {
+  background: color-mix(in srgb, var(--foreground) 4%, transparent);
+}
+
+.grid span {
+  display: block;
+  font-size: 0.85rem;
+  color: color-mix(in srgb, var(--foreground) 60%, transparent);
+}
+
+.tool {
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+  border-radius: 10px;
+}
+
+.tool h2 {
+  margin-top: 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.field textarea,
+.field select {
+  font: inherit;
+  font-family: ui-monospace, monospace;
+  font-size: 0.85rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--foreground) 20%, transparent);
+  background: transparent;
+  color: inherit;
+}
+
+.button {
+  font: inherit;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--foreground) 25%, transparent);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.notes {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: #c62828;
+}

@@ -69,4 +69,4 @@ We may update these Terms. We will post the new version here and tell you in the
 
 ## Contact Us
 
-bilaldemirerlabs@gmail.com
+bdemirer70@gmail.com

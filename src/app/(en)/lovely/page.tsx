@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-const SUPPORT_EMAIL = "bilaldemirerlabs@gmail.com";
+const SUPPORT_EMAIL = "bdemirer70@gmail.com";
 
 const FAQ = [
   {

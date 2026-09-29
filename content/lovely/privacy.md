@@ -4,7 +4,7 @@ Effective Date: September 29, 2026
 Last Updated: September 29, 2026
 
 **Operator / data controller:** Bilal Labs (“Lovely,” “we,” “us”)  
-**Contact:** bilaldemirerlabs@gmail.com
+**Contact:** bdemirer70@gmail.com
 
 ---
 
@@ -160,7 +160,7 @@ Your data is stored on Google Firebase servers in the United States (us-east1; t
 
 ## Your Privacy Rights
 
-Depending on where you live, you may have the right to access, correct, export or delete your data, to restrict or object to certain uses, and to withdraw consent. You can correct and delete most data directly in the app. For anything else, email bilaldemirerlabs@gmail.com. If we deny a request, you can appeal by replying to our email, and you may contact your local data protection authority.
+Depending on where you live, you may have the right to access, correct, export or delete your data, to restrict or object to certain uses, and to withdraw consent. You can correct and delete most data directly in the app. For anything else, email bdemirer70@gmail.com. If we deny a request, you can appeal by replying to our email, and you may contact your local data protection authority.
 
 ### Legal bases (EEA/UK and similar regions)
 
@@ -179,7 +179,7 @@ Data is encrypted in transit. Access to your content is limited by our database 
 
 ## Children’s Privacy
 
-Lovely is not intended for anyone under 18. We do not knowingly collect personal information from children under 18. If you believe a child has used Lovely, contact bilaldemirerlabs@gmail.com and we will delete the account.
+Lovely is not intended for anyone under 18. We do not knowingly collect personal information from children under 18. If you believe a child has used Lovely, contact bdemirer70@gmail.com and we will delete the account.
 
 ---
 
@@ -191,4 +191,4 @@ We may update this policy. The latest version is always at this page. If changes
 
 ## Contact Us
 
-Email: bilaldemirerlabs@gmail.com
+Email: bdemirer70@gmail.com

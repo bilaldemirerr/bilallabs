@@ -90,6 +90,10 @@ export default function SubagentsHub() {
           <p>{f.a}</p>
         </div>
       ))}
+
+      <p>
+        More AI dev guides: <Link href="/ai/opus-video">how to make videos with Claude Opus 5.5</Link>.
+      </p>
     </main>
   );
 }

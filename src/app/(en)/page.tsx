@@ -31,6 +31,12 @@ export default function Home() {
             <span>33 copy-paste subagent templates and a format converter</span>
           </Link>
         </li>
+        <li>
+          <Link href="/ai/opus-video">
+            <strong>How to make videos with Claude Opus 5.5</strong>
+            <span>Real recipes with the MP4, the exact prompt and measured cost</span>
+          </Link>
+        </li>
       </ul>
       <p className={styles.contact}>
         Contact:{" "}

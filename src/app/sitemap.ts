@@ -11,6 +11,7 @@ import {
 } from "@/lib/kpss/paths";
 import { SUBJECTS, TOPICS } from "@/lib/kpss/types";
 import { SUBAGENTS, SUBAGENTS_BASE, subagentPath } from "@/lib/subagents";
+import { invoSitemapEntries } from "@/lib/invo/entries";
 import { COMPARE_SLUG, OPUS_VIDEO_BASE, RECIPES, recipePath } from "@/lib/opus-video";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -73,5 +74,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
     { url: `${SITE_URL}${OPUS_VIDEO_BASE}/${COMPARE_SLUG}`, lastModified, changeFrequency: "monthly", priority: 0.7 },
+    ...invoSitemapEntries(lastModified),
   ];
 }

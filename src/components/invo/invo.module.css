@@ -1,0 +1,174 @@
+.main {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+.eyebrow {
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  color: color-mix(in srgb, var(--foreground) 55%, transparent);
+}
+
+.eyebrow a:hover {
+  text-decoration: underline;
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+  list-style: none;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.switcher a:hover,
+.switcher a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+.name {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.main h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.lead,
+.scope,
+.free {
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--foreground) 78%, transparent);
+}
+
+.lead + .lead {
+  margin-top: 0.75rem;
+}
+
+.main section + section,
+.shots,
+.store,
+.legal {
+  margin-top: 2rem;
+}
+
+.main h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.bullets,
+.plans {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  line-height: 1.45;
+}
+
+.scope {
+  margin-top: 0.9rem;
+}
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.shots img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+}
+
+.free {
+  margin-bottom: 0.75rem;
+}
+
+.store {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.store:hover {
+  background: color-mix(in srgb, var(--foreground) 4%, transparent);
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  list-style: none;
+}
+
+.legal a:hover,
+.list a:hover {
+  text-decoration: underline;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.list a {
+  display: block;
+  padding: 0.9rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+  border-radius: 10px;
+}
+
+.list a strong,
+.list time {
+  display: block;
+}
+
+.list time,
+.muted {
+  margin-top: 0.25rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--foreground) 55%, transparent);
+}
+
+.prose h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.prose p,
+.prose li {
+  line-height: 1.55;
+}
+
+.prose p {
+  margin: 0.75rem 0;
+}
+
+.prose ol {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 0.75rem 0 1rem;
+}
+
+@media (max-width: 800px) {
+  .shots {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

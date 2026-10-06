@@ -9,6 +9,7 @@
     "lint": "eslint",
     "check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-kpss.mts",
     "check:content": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-content.mts",
+    "check:invo": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-invo.mts",
     "sync:osym": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/sync-osym-content.mts",
     "audit:osym": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/audit-osym.mts"
   },

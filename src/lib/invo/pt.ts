@@ -1,5 +1,6 @@
 /**
- * Quoted from Localizable.xcstrings localizations.pt. Nothing else is shown on /pt/invo.
+ * Quoted from Localizable.xcstrings localizations.pt.
+ * Privacy, terms, and support labels are shown on /pt/invo.
  * onboarding.one.sentence
  */
 export const PT_HEADLINE =

@@ -1,5 +1,5 @@
 import { SITE_URL } from "../site.ts";
-import { blogIndexPath, blogPostPath, landingPath, LOCALES } from "./locales.ts";
+import { blogIndexPath, blogPostPath, landingPath, LOCALES, type InvoLocale } from "./locales.ts";
 import { publishedPosts, type InvoPost } from "./posts.ts";
 
 export type InvoSitemapEntry = {
@@ -46,4 +46,18 @@ export function sitemapUrlForPost(
 ): string | null {
   if (!locale.blog || !post.published) return null;
   return `${SITE_URL}${blogPostPath(locale, post.slug)}`;
+}
+
+function xml(value: string): string {
+  return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+export function blogFeedXml(locale: InvoLocale): string {
+  const items = publishedPosts(locale.id)
+    .map((post) => {
+      const url = `${SITE_URL}${blogPostPath(locale, post.slug)}`;
+      return `<item><title>${xml(post.title)}</title><link>${url}</link><guid>${url}</guid><pubDate>${new Date(post.date).toUTCString()}</pubDate><description>${xml(post.description)}</description></item>`;
+    })
+    .join("");
+  return `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Invo Blog</title><link>${SITE_URL}${blogIndexPath(locale)}</link><description>Invo</description><language>${locale.htmlLang}</language>${items}</channel></rss>`;
 }

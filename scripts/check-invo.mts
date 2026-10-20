@@ -1,16 +1,19 @@
 import assert from "node:assert/strict";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
-import { invoSitemapEntries, sitemapUrlForPost } from "../src/lib/invo/entries.ts";
+import { blogFeedXml, invoSitemapEntries, sitemapUrlForPost } from "../src/lib/invo/entries.ts";
+import { headingId, markdownToHtml } from "../src/lib/markdown.ts";
 import { SITE_URL } from "../src/lib/site.ts";
 import {
   blogIndexPath,
+  blogPostPath,
   landingPath,
   LOCALES,
   localeById,
 } from "../src/lib/invo/locales.ts";
-import { postsIn } from "../src/lib/invo/posts.ts";
+import { postsIn, publishedPosts } from "../src/lib/invo/posts.ts";
 import { PT_HEADLINE, PT_PRIVACY, PT_SUPPORT, PT_TERMS, PT_TOOLS } from "../src/lib/invo/pt.ts";
+import { BLOG, CHROME, firstSentence, LANGUAGE_NAME, SECTIONS } from "../src/lib/invo/landing.ts";
 import { readStore } from "../src/lib/invo/store.ts";
 
 const EXPECTED = ["de", "en", "es", "fr", "pt", "pt-BR", "tr"];
@@ -100,9 +103,40 @@ const ideas = readFileSync(path.join("content", "invo", "queue.md"), "utf8")
   .filter((line) => line.startsWith("- [ ] ") || line.startsWith("- [x] "));
 assert.equal(ideas.length, 8);
 
+assert.equal(
+  firstSentence("Get started with 3 free estimations. Afterward, choose a plan:"),
+  "Get started with 3 free estimations.",
+);
+for (const locale of LOCALES) {
+  const chrome = CHROME[locale.id];
+  assert.ok(chrome.headline.length > 20, locale.id);
+  assert.ok(chrome.priceNote.length > 10, locale.id);
+  assert.ok(LANGUAGE_NAME[locale.id].length > 1, locale.id);
+  assert.ok(existsSync(path.join("public", "invo", "badges", `${locale.id}.svg`)), locale.id);
+  const sections = SECTIONS[locale.id];
+  assert.equal(sections.faqs.length, SECTIONS.en.faqs.length, locale.id);
+  assert.ok(sections.faqs.every(([q, a]) => q.length > 5 && a.length > 10), locale.id);
+  const shown = JSON.stringify([sections, BLOG[locale.id].postCta, CHROME[locale.id]]);
+  assert.ok(!/free|kostenlos|gratis|gratuit|grátis|ücretsiz/i.test(shown), `${locale.id} must not mention a free tier`);
+}
+
 const storeDirs = readdirSync(path.join("content", "invo", "store"));
 assert.deepEqual(storeDirs.sort(), ["de-DE", "en-US", "es-ES", "fr-FR", "pt-BR", "tr"]);
 assert.ok(!storeDirs.includes("en-GB"));
 assert.ok(!storeDirs.includes("es-MX"));
+
+assert.equal(headingId("Örnek hesap: mutfak tadilatı"), "ornek-hesap-mutfak-tadilati");
+assert.ok(markdownToHtml("## Step 1: Go").includes('id="step-1-go"'));
+assert.ok(markdownToHtml("[a](/invo/blog)").includes('<a href="/invo/blog">a</a>'));
+for (const locale of LOCALES.filter((item) => item.blog)) {
+  const live = publishedPosts(locale.id);
+  const feed = blogFeedXml(locale);
+  for (const post of live) {
+    assert.ok(feed.includes(blogPostPath(locale, post.slug)), `${locale.id} feed ${post.slug}`);
+    for (const [, href] of post.body.matchAll(/\]\((\/[^)\s]*)\)/g)) {
+      assert.ok(live.some((other) => href === blogPostPath(locale, other.slug)), `${locale.id}/${post.slug} dead link ${href}`);
+    }
+  }
+}
 
 console.log("invo checks ok");

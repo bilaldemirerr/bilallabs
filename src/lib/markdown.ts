@@ -6,6 +6,17 @@ export function readAppMarkdown(appSlug: string, doc: "privacy" | "terms"): stri
   return readFileSync(file, "utf8");
 }
 
+/** Same rule for the h2 id in the HTML and the table of contents link. */
+export function headingId(text: string): string {
+  return text
+    .toLocaleLowerCase("en")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ı/g, "i")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 function escapeHtml(s: string): string {
   return s
     .replace(/&/g, "&amp;")
@@ -22,6 +33,7 @@ function inline(s: string): string {
       /\[([^\]]+)\]\((https?:[^)]+)\)/g,
       '<a href="$2" rel="noopener noreferrer">$1</a>',
     )
+    .replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, '<a href="$2">$1</a>')
     .replace(
       /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g,
       '<a href="mailto:$1">$1</a>',
@@ -51,7 +63,8 @@ export function markdownToHtml(md: string): string {
     const heading = /^(#{1,3})\s+(.+)$/.exec(line);
     if (heading) {
       const level = heading[1].length;
-      out.push(`<h${level}>${inline(heading[2])}</h${level}>`);
+      const id = level === 2 ? ` id="${headingId(heading[2].trim())}"` : "";
+      out.push(`<h${level}${id}>${inline(heading[2])}</h${level}>`);
       i += 1;
       continue;
     }

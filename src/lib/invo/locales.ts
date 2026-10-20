@@ -129,6 +129,10 @@ export function blogIndexPath(locale: { prefix: string }): string {
   return `${landingPath(locale)}/blog`;
 }
 
+export function blogFeedPath(locale: { prefix: string }): string {
+  return `${blogIndexPath(locale)}/feed.xml`;
+}
+
 export function blogPostPath(locale: { prefix: string }, slug: string): string {
   return `${blogIndexPath(locale)}/${slug}`;
 }

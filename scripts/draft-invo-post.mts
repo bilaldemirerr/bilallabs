@@ -38,6 +38,8 @@ slug: "${slug}"
 date: "${date}"
 query: "${quoted}"
 published: false
+category: "invoicing"
+image: "01-estimates-invoices.png"
 ---
 
 # ${query}

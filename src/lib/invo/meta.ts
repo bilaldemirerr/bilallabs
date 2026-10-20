@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import {
+  blogFeedPath,
   blogIndexPath,
   blogPostPath,
   landingPath,
@@ -8,7 +9,7 @@ import {
   type InvoLocale,
 } from "./locales.ts";
 import { publishedPost, type InvoPost } from "./posts.ts";
-import { PT_HEADLINE, PT_TOOLS, ptPlain } from "./pt.ts";
+import { CHROME, PT_STORE } from "./landing.ts";
 import { readStore } from "./store.ts";
 
 function languagesFor(pathFor: (locale: InvoLocale) => string | null): Record<string, string> {
@@ -27,8 +28,8 @@ export function landingMetadata(locale: InvoLocale): Metadata {
   const languages = languagesFor((item) => landingPath(item));
   if (!locale.storeDir || !locale.titleLead) {
     return {
-      title: ptPlain(PT_HEADLINE),
-      description: PT_TOOLS,
+      title: CHROME.pt.headline,
+      description: PT_STORE.subtitle,
       alternates: { canonical, languages },
     };
   }
@@ -49,6 +50,7 @@ export function blogIndexMetadata(locale: InvoLocale): Metadata {
     alternates: {
       canonical: blogIndexPath(locale),
       languages: languagesFor((item) => (item.blog ? blogIndexPath(item) : null)),
+      types: { "application/rss+xml": blogFeedPath(locale) },
     },
   };
 }
@@ -57,6 +59,14 @@ export function blogPostMetadata(locale: InvoLocale, post: InvoPost): Metadata {
   return {
     title: post.title,
     description: post.description,
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.description,
+      publishedTime: post.date,
+      locale: locale.htmlLang,
+      url: blogPostPath(locale, post.slug),
+    },
     alternates: {
       canonical: blogPostPath(locale, post.slug),
       languages: languagesFor((item) => {

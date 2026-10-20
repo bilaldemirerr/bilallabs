@@ -1,11 +1,12 @@
 # Invo post queue. The draft script uses the first line that starts with "- [ ]".
 # Publishing a post is not done here. Change published: false to published: true in that file.
+# Lines are real search questions, not feature names. Answer the question first; Invo comes last.
 
-- [ ] how to keep estimates quotes and invoices in one place
-- [ ] how to price a job with line items quantity unit and unit cost
-- [ ] how to add sales tax and a payment history to an invoice
-- [ ] how to put your signature on a branded pdf
-- [ ] how to send a branded pdf with a logo color and six templates
-- [ ] how to search estimates by title customer location or document type
-- [ ] how to see what was billed collected outstanding and overdue
-- [ ] how to bill a job in usd eur gbp or try
+- [x] how to write a construction estimate
+- [x] markup vs margin for contractors
+- [x] how much deposit should a contractor ask for
+- [ ] estimate vs quote vs bid what is the difference
+- [ ] how to write a change order for a remodel
+- [ ] how to price a bathroom remodel per square foot
+- [ ] what to include on a contractor invoice
+- [ ] how to follow up on an unpaid contractor invoice
